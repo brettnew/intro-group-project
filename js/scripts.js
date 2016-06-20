@@ -18,6 +18,11 @@ $(document).ready(function(){
     $("#---").text(newCharacter.nameCharacter);
 
 
-
+    if(){
+      $("").show();
+    } else if () {
+      $("").show();
+    }
+    
   });
 });

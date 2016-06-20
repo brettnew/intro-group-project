@@ -1,11 +1,12 @@
-# (Project Name) Webpage
+# Choose Your Own Drama Webpage
 
-#### (Week Name) Independent Project for Epicodus, 00/00/2016
+#### Intro Course Team Project for Epicodus, 06/24/2016
 
-#### By Shradha Pulla
+#### By Brett New, Halle Williams, Alan Denison, Shradha Pulla
 
 ## Description
 
+Choose-your-own adventure style webpage; user will enter their name and find out their story by making a series of decisions. Inspired by Korean dramas.
 
 ## Setup/Installation Requirements
 
@@ -37,10 +38,12 @@ Contact Epicodus for support in running this program.
 
 ## Links
 
-Git Hub Webpage: http://pullashradha.github.io/
+Git Hub Webpage: https://brettnew.github.io/intro-group-project
+
+Git Hub Repository: https://github.com/brettnew/intro-group-project
 
 ### License
 
 *This software is licensed under the GPL license.*
 
-Copyright (c) 2016 Shradha Pulla
+Copyright (c) 2016 Brett New, Halle Williams, Alan Denison, Shradha Pulla
