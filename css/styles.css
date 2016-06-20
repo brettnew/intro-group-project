@@ -1,8 +1,14 @@
-
 h1 {
   text-align: center;
 }
 
 #decision1, #decision-2a, #decision-2b, #result1, #result2  {
   display: none;
+}
+
+#player1 {
+  width: 200px;
+}
+.form-group {
+  align: center;
 }
