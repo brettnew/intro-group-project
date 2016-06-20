@@ -12,7 +12,7 @@ function Character(name){
 
 // Front-end
 $(document).ready(function(){
-  $("#intro-form").submit(function(event){
+  $("form#intro-form").submit(function(event){
     event.preventDefault();
     var name = $("input#player1").val();
 
@@ -21,16 +21,19 @@ $(document).ready(function(){
 
 
     $("#decision1").show();
-    $("#---").text(newCharacter.nameCharacter);
+    $("#player-name").text(newCharacter.nameCharacter);
 
 
-    $("#button1").click(function) {
+    $("#button1").click(function(event) {
+      event.preventDefault();
       if(decision1 === "1"){
         $("#decision-2a").show();
+        $("#decision1").hide();
       } else {
         $("#decision-2b").show();
+        $("#decision1").hide();
       }
-    };
+    });
 
 
 
