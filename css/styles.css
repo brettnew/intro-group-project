@@ -1,0 +1,24 @@
+
+h1 {
+  text-align: center;
+}
+
+#decision1 {
+  display: none;
+}
+
+#decision2a {
+  display: none;
+}
+
+#decision2b {
+  display: none;
+}
+
+#result1 {
+  display: none;
+}
+
+#result2 {
+  display: none;
+}
