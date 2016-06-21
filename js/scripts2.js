@@ -29,10 +29,10 @@ $(document).ready(function(){
     event.preventDefault();
     var decision2a = $("select#option2a").val();
     if (decision2a === "1") {
-      $("#result1").show();
+      $("#decision-3a").show();
       $("#decision-2a").hide();
     } else if (decision2a === "2") {
-      $("#result2").show();
+      $("#result1").show();
       $("#decision-2a").hide();
     }
   });
@@ -43,7 +43,7 @@ $(document).ready(function(){
       $("#result2").show();
       $("#decision-2b").hide();
     } else if (decision2b === "2") {
-      $("#result1").show();
+      $("#decision-3b").show();
       $("#decision-2b").hide();
     }
   });
