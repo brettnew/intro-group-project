@@ -49,6 +49,6 @@ input {
   font-size: 20px;
 }
 
-.dogPet, .catPet {
+.dogPet, .catPet, .lizardPet {
   display: none;
 }

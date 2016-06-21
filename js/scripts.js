@@ -26,6 +26,8 @@ $(document).ready(function() {
       $(".dogPet").show();
     } else if (petType === "cat") {
       $(".catPet").show();
+    } else if (petType === "lizard") {
+      $(".lizardPet").show();
     }
   });
   $("form#decision-form").submit(function(event) {
