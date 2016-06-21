@@ -1,8 +1,12 @@
 //Business Logic
-function Character(name, pet){
+function Character(name, petName){
   this.nameCharacter = name;
-  this.pet = pet;
+  this.petName = petName;
 };
+
+function SpecialItem(item) {
+  this.item = $("select#special-item").val();
+}
 
 
 
@@ -11,13 +15,19 @@ $(document).ready(function() {
   $("form#intro-form").submit(function(event){
     event.preventDefault();
     var name = $("input#player1").val();
-    var pet = $("select#player-pet").val();
-    var newCharacter = new Character(name);
+    var petType = $("select#player-pet").val();
+    var inputtedPetName = $("input#pet-name").val();
+    var newCharacter = new Character(name, inputtedPetName);
     $(".intro-page").hide();
     $(".player-name").text(newCharacter.nameCharacter);
+    $(".petsName").text(newCharacter.petName);
     $("#decision1").show();
-    if(pet === "dog") {
+    if(petType === "dog") {
       $(".dogPet").show();
+    } else if (petType === "cat") {
+      $(".catPet").show();
+    } else if (petType === "lizard") {
+      $(".lizardPet").show();
     }
   });
   $("form#decision-form").submit(function(event) {
@@ -44,10 +54,17 @@ $(document).ready(function() {
   });
   $("form#decision2b-form").submit(function(event) {
     event.preventDefault();
+    var newSpecialItem = new SpecialItem();
+    var petType = $("select#player-pet").val();
     var decision2b = $("input:radio[name=option2b]:checked").val();
     if (decision2b === "1") {
-      $("#result2").show();
-      $("#decision-2b").hide();
+      if ((newSpecialItem.item === "lucky rock") && (petType === "lizard")) {
+        $("#result9").show();
+        $("#decision-2b").hide();
+      } else {
+        $("#result2").show();
+        $("#decision-2b").hide();
+      }
     } else if (decision2b === "2") {
       $("#segway-2b").show();
       $("#decision-2b").hide();
@@ -59,10 +76,16 @@ $(document).ready(function() {
   })
   $("form#decision3a-form").submit(function(event) {
     event.preventDefault();
+    var newSpecialItem = new SpecialItem();
     var decision3a = $("input:radio[name=option3a]:checked").val();
     if (decision3a === "1") {
-      $("#result3").show();
-      $("#decision-3a").hide();
+      if (newSpecialItem.item === "mini sewing kit") {
+        $("#result8").show();
+        $("#decision-3a").hide();
+      } else {
+        $("#result3").show();
+        $("#decision-3a").hide();
+      }
     } else if (decision3a === "2") {
       $("#result5").show();
       $("#decision-3a").hide();
@@ -70,13 +93,19 @@ $(document).ready(function() {
   });
   $("form#decision3b-form").submit(function(event) {
     event.preventDefault();
+    var newSpecialItem = new SpecialItem();
     var decision3b = $("input:radio[name=option3b]:checked").val();
     if (decision3b === "1") {
       $("#decision-3c").show();
       $("#decision-3b").hide();
     } else if (decision3b === "2") {
-      $("#result6").show();
-      $("#decision-3b").hide();
+      if (newSpecialItem.item === "locket") {
+        $("#result7").show();
+        $("#decision-3b").hide();
+      } else {
+        $("#result6").show();
+        $("#decision-3b").hide();
+      }
     }
   });
   $("form#decision3c-form").submit(function(event) {
