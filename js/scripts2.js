@@ -6,13 +6,13 @@ function Character(name){
 
 
 //User Interface Logic
-$(document).ready(function(){
+$(document).ready(function() {
   $("form#intro-form").submit(function(event){
     event.preventDefault();
     var name = $("input#player1").val();
     var newCharacter = new Character(name);
+    $(".player-name").text(newCharacter.nameCharacter);
     $("#decision1").show();
-    $("#player-name").text(newCharacter.nameCharacter);
   });
   $("form#decision-form").submit(function(event) {
     event.preventDefault();
