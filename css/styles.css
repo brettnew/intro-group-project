@@ -1,5 +1,11 @@
+@font-face {
+  font-family: ourFont;
+  src: url(Korean_Calligraphy.ttf);
+}
+
 h1 {
   text-align: center;
+  font-family: ourFont;
 }
 
 #decision1, #decision-2a, #decision-2b, #result1, #result2, #result3, #result4, #result5, #decision-3a, #decision-3b  {
