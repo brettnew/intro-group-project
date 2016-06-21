@@ -1,7 +1,7 @@
 //Business Logic
-function Character(name, pet){
+function Character(name, petName){
   this.nameCharacter = name;
-  this.pet = pet;
+  this.petName = petName;
 };
 
 
@@ -11,13 +11,17 @@ $(document).ready(function() {
   $("form#intro-form").submit(function(event){
     event.preventDefault();
     var name = $("input#player1").val();
-    var pet = $("select#player-pet").val();
-    var newCharacter = new Character(name);
+    var petType = $("select#player-pet").val();
+    var inputtedPetName = $("input#pet-name").val();
+    var newCharacter = new Character(name, inputtedPetName);
     $(".intro-page").hide();
     $(".player-name").text(newCharacter.nameCharacter);
+    $(".petsName").text(newCharacter.petName);
     $("#decision1").show();
-    if(pet === "dog") {
+    if(petType === "dog") {
       $(".dogPet").show();
+    } else if (petType === "cat") {
+      $(".catPet").show();
     }
   });
   $("form#decision-form").submit(function(event) {

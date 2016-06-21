@@ -19,11 +19,14 @@
                 <input required id="player1" class="form-control" type="text">
               </div>
               <div class="form-group">
+                <label>Choose Your Pet </label>
                 <select required class="form-control" id="player-pet">
                   <option></option>
                   <option value="cat">Cat</option>
                   <option value="dog">Dog</option>
                 </select>
+                <label>What is your pet's name?</label>
+                <input required id="pet-name" class="form-control" type="text">
               </div>
                 <button type="submit" class="btn btn-begin">Begin!</button>
             </form>
@@ -39,7 +42,7 @@
       <div id="decision1">
         <h3>Decision 1</h3>
         <p>Hi <span class="player-name"></span>!</p>
-        <p>Your family owns a dry-cleaning business, and it is your job to make deliveries each day when you come home from school. Today you <span class="dogPet">and your dog</span> are taking a delivery to Shinwha High School, the most prestigious and expensive private school in all of South Korea. As you get closer to the school, you notice a crowd forming on the main building's roof. You climb to the top of the roof, and see that there is a lone boy on the very edge. You get closer, and just as you are near enough to reach out and touch him, he jumps! Do you:</p>
+        <p>Your family owns a dry-cleaning business, and it is your job to make deliveries each day when you come home from school. Today you <span class="dogPet">and <span class="petsName"></span>, your dog,</span> are taking a delivery to Shinwha High School, the most prestigious and expensive private school in all of South Korea. <span class="catPet">On the way you found out your cat, <span class="petsName"></span>, hopped into your backpack!</span> As you get closer to the school, you notice a crowd forming on the main building's roof. You climb to the top of the roof, and see that there is a lone boy on the very edge. You get closer, and just as you are near enough to reach out and touch him, he jumps! Do you:</p>
         <form id="decision-form">
           <div class="radio">
             <label>
@@ -59,7 +62,7 @@
   <!-- Decision 2a Start -->
       <div id="decision-2a">
         <h3>Decision 2a</h3>
-        <p>Wow <span class="player-name"></span> you saved him! The crowd on the roof cheers at your heroics <span class="dogPet">and your dog barks enthusiastically at your side</span>. You go home, but unbeknownst to you, a Shinwha student filmed the whole thing, and uploaded it to the Internet! By the next day, everyone has seen it, and are clamoring for you to be rewarded, and for Shinhwa High School to be investigated for allowing such an incident to take place on their campus. Desperate for good PR, Shinhwa High School offers you an all-expense paid scholarship. Do you:</p>
+        <p>Wow <span class="player-name"></span> you saved him! The crowd on the roof cheers at your heroics<span class="dogPet"> and <span class="petsName"></span> barks enthusiastically at your side</span><span class="catPet">, while <span class="petsName"></span> yawns unenthusiastically</span>. You go home, but unbeknownst to you, a Shinwha student filmed the whole thing, and uploaded it to the Internet! By the next day, everyone has seen it, and are clamoring for you to be rewarded, and for Shinhwa High School to be investigated for allowing such an incident to take place on their campus. Desperate for good PR, Shinhwa High School offers you an all-expense paid scholarship. Do you:</p>
         <form id="decision2a-form">
           <div class="radio">
             <label>
@@ -79,7 +82,7 @@
   <!-- Decision 2b Start -->
       <div id="decision-2b">
         <h3>Decision 2b</h3>
-        <p>Oh no <span class="player-name"></span> you didn't save him! As you watch him plummet to his death, two men in black suits appear from the crowd and yell "Why didn't you save him?!", and pull out their guns on you. Turns out the student who had just jumped off had bodyguards!<span class="dogPet"> Your dog starts barking angrily at the men and moves in front to protect you.</span> Do you:
+        <p>Oh no <span class="player-name"></span> you didn't save him! As you watch him plummet to his death, two men in black suits appear from the crowd and yell "Why didn't you save him?!", and pull out their guns on you. Turns out the student who had just jumped off had bodyguards!<span class="dogPet"> Your dog starts barking angrily at the men and moves in front to protect you.</span><span class="catPet"> Your cat hissed with her back arched and runs into a corner on the roof to hide.</span> Do you:
         <form id="decision2b-form">
           <div class="radio">
             <label>
@@ -98,7 +101,7 @@
       </div>
   <!-- 2b Segway -->
       <div id="segway-2b">
-        <p>You reach the edge of the roof <span class="dogPet">holding your dog</span>. Scared, you see your life flash before your eyes and you prepare to die. But before the bodyguards can shoot you, a mysterious woman emerges from the crowd and pushes you off the roof.</p>
+        <p>You reach the edge of the roof <span class="dogPet">holding your dog</span>. Scared, you see your life flash before your eyes and you prepare to die. But before the bodyguards can shoot you, a mysterious woman emerges from the crowd and pushes you off the roof. <span class="catPet">The last thing you see is <span class="petsName"></span> looking worriedly at your from her corner.</span></p>
         <button type="submit" class="btn" id="segway2b-btn">Continue</button>
       </div>
   <!--Decision 3a Start  -->
@@ -164,11 +167,11 @@
 <!-- Adventure Results Start -->
       <div id="result1">
         <h3>Result 1</h3>
-        <p>You refused the scholarship. You stay in public school, graduating in the middle of your class. You keep working at your parents' dry-cleaning business. A series of health issues with your grandpa, you mother, and your brother force you to remortgage the business. They end up dying and you are left to run the business alone. Desperate, you turn to loan sharks, and they start hounding you to repay them. <span class="dogPet">You have to sell your precious dog in order to get some money to pay back your debts.</span> Scared, you increase your working hours to 20 hours a day.You die at 34, due to a mysterious stress-related illness.</p>
+        <p>You refused the scholarship. You stay in public school, graduating in the middle of your class. You keep working at your parents' dry-cleaning business. A series of health issues with your grandpa, you mother, and your brother force you to remortgage the business. They end up dying and you are left to run the business alone. Desperate, you turn to loan sharks, and they start hounding you to repay them. <span class="dogPet catPet">You have to sell your precious <span class="petsName"></span> in order to get some money to pay back your debts.</span> Scared, you increase your working hours to 20 hours a day.You die at 34, due to a mysterious stress-related illness.</p>
       </div>
       <div id="result2">
         <h3>Result 2</h3>
-        <p>The bodyguards shoot you and you die. <span class="dogPet">The bodyguards take pity on your dog and adopt her.</span></p>
+        <p>The bodyguards shoot you and you die. <span class="dogPet">The bodyguards take pity on your dog and adopt them.</span><span class="catPet">The bodyguards take pity on your cat and adopt them.</span></p>
       </div>
       <div id="result3">
         <h3>Result 3</h3>
