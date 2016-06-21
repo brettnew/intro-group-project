@@ -8,7 +8,7 @@ h1 {
   font-family: ourFont;
 }
 
-#decision1, #decision-2a, #decision-2b, #result1, #result2, #result3, #result4, #result5, #decision-3a, #decision-3b, #decision-3c {
+#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #decision-3a, #decision-3b, #decision-3c {
   display: none;
 }
 

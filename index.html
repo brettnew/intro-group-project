@@ -91,8 +91,9 @@
         </form>
       </div>
   <!-- 2b Segway -->
-      <div id="2b-segway">
+      <div id="segway-2b">
         <p>You reach the edge of the roof <span class="dogPet">holding your dog</span>. Scared, you see your life flash before your eyes and you prepare to die. But before the bodyguards can shoot you, a mysterious woman emerges from the crowd and pushes you off the roof.</p>
+        <button type="submit" class="btn" id="segway2b-btn">Continue</button>
       </div>
   <!--Decision 3a Start  -->
       <div id="decision-3a">
@@ -117,64 +118,67 @@
   <!--Decision 3b Start  -->
       <div id="decision-3b">
         <h3>Decision 3a</h3>
-        <p>As you fall <span class="dogPet">with your tiny dog in your arms</span>, a sudden wrinkle in time opens, and you are transported back to 14th century Korea. You open your eyes to find you <span class="dogPet">and your dog</span> have landed on a pile of laundry. Somehow during the time travel your clothes have changed to be what 14th century Korean women wear. A man, mistaking you for a servant, demands that you clean the clothes you have landed on. Turns out those were the king's royal garments. Using your dry-cleaning prowess, you clean them to perfection. Soon you become famous throughout the land for your skills. Then one night a strange lady with a sword arrives at your dwelling and demands you come with her. You recognize her as the woman on the roof who pushed you into the wrinkle in time. Do you:</p>
+        <p>As you fall <span class="dogPet">with your tiny dog in your arms</span>, a sudden wrinkle in time opens, and you are transported back to 14th century Korea. You open your eyes to find you <span class="dogPet">and your dog</span> have landed on a pile of laundry. Somehow during the time travel your clothes have changed to be what 14th century Korean women wear. A man, mistaking you for a servant, demands that you clean the clothes you have landed on. Turns out those were the king's royal garments. Using your dry-cleaning prowess, you clean them to perfection. Soon you become famous throughout the land for your skills. Then one night a strange lady arrives at your dwelling and demands you come with her. You recognize her as the woman on the roof who pushed you back in time. Do you:</p>
         <form id="decision3b-form">
           <div class="radio">
             <label>
             <input type="radio" name="option3b" value="1" checked>
-                Go with the lady, because you have questions to ask <span class="dogPet">and of course your dog follows along</span>
+                Go with the lady <span class="dogPet">with your dog in tow</span>, because you have questions about what happened
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="option3b" value="2">
-              Stay in the palace so as to not anger the king
+              You call the palace guards to arrest the woman because you can't forgive her for pushing you back in time
             </label>
           </div>
           <button type="submit" class="btn button2">Next</button>
         </form>
       </div>
-      <!--Decision 3c Start  -->
-          <div id="decision-3c">
-            <h3>Decision 3c</h3>
-            <p>You decide to go with the lady with the sword and she reveals to be your time travelling mom who can transport you back to your time. You feel guilty about your decision to not save the boy on the roof, so your magical mom gives you the option to go back to your time. Do you:</p>
-            <form id="decision3c-form">
-              <div class="radio">
-                <label>
-                <input type="radio" name="option3c" value="1" checked>
-                  Stay with your mom and live happily ever after in 14th century Korea
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="option3c" value="2">
-                  Go back to the time on the roof and save the boy from dying
-                </label>
-              </div>
-              <button type="submit" class="btn button2">Next</button>
-            </form>
+  <!--Decision 3c Start  -->
+      <div id="decision-3c">
+        <h3>Decision 3c</h3>
+        <p>You decide to go with the lady and she reveals to be your time travelling mom. She tells you that she was stuck in the 21st century and could only go back home to the 14th century by pushing you into it as well. You have mixed feelings about the reunion <span class="dogPet">, but your dog takes to your mom in no time</span>. Your mom tells you that she wants you to stay with her in this century. But you feel guilty about your decision to not save the boy on the roof, so your mom tells you that she can send you back to the 21st century, but you will never be able to come back to the 14th century. Do you:</p>
+        <form id="decision3c-form">
+          <div class="radio">
+            <label>
+            <input type="radio" name="option3c" value="1" checked>
+              Stay with your mom in 14th century Korea
+            </label>
           </div>
-    <!-- Adventure Results Start -->
-        <div id="result1">
-          <h3>Result 1</h3>
-          <p>You refused the scholarship. You stay in public school, graduating in the middle of your class. You keep working at your parents' dry-cleaning business. A series of health issues with your grandpa, you mother, and your brother force you to remortgage the business. They end up dying and you are left to run the business alone. Desperate, you turn to loan sharks, and are unable to repay them, resulting in both your legs being broken. They never heal properly, and you are unable to keep running the business. You die at 34, due to a mysterious stress-related illness.</p>
-        </div>
-        <div id="result2">
-          <h3>Result 2</h3>
-          <p>You put up a good fight, but you are no match for the strong lady with the sword. You die.</p>
-        </div>
-        <div id="result3">
-          <h3>Result 3</h3>
-          <p>After cursing him out, he realizes that he has never met anyone like you. You fall in love, get married too young, and get all the benefits of being married to a rich man. You live happily ever after.</p>
-        </div>
-        <div id="result4">
-          <h3>Result 4</h3>
-          <p>You decide to stay with your mother and live happily ever after.</p>
-        </div>
-        <div id="result5">
-          <h3>Result 5</h3>
-          <p>You try to swim across the Yellow Sea, and you get eaten by a shark. You die.</p>
-        </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="option3c" value="2">
+              Go back to the time on the roof and save the boy from dying
+            </label>
+          </div>
+          <button type="submit" class="btn button2">Next</button>
+        </form>
+      </div>
+<!-- Adventure Results Start -->
+      <div id="result1">
+        <h3>Result 1</h3>
+        <p>You refused the scholarship. You stay in public school, graduating in the middle of your class. You keep working at your parents' dry-cleaning business. A series of health issues with your grandpa, you mother, and your brother force you to remortgage the business. They end up dying and you are left to run the business alone. Desperate, you turn to loan sharks, and they start hounding you to repay them. <span class="dogPet">You have to sell your precious dog in order to get some money to pay back your debts.</span> Scared, you increase your working hours to 20 hours a day.You die at 34, due to a mysterious stress-related illness.</p>
+      </div>
+      <div id="result2">
+        <h3>Result 2</h3>
+        <p>The bodyguards shoot you and you die. <span class="dogPet">The bodyguards take pity on your dog and adopt her.</span></p>
+      </div>
+      <div id="result3">
+        <h3>Result 3</h3>
+        <p>After cursing him out, he realizes that he has never met anyone like you. You fall in love, get married right after high school, and get all the benefits of being married to a rich man. You live happily ever after.</p>
+      </div>
+      <div id="result4">
+        <h3>Result 4</h3>
+        <p>You decide to stay with your mother in 14th century Korea and live happily ever after running a small inn with her. Fourteenth century life is tough, but you're with your mother!</p>
+      </div>
+      <div id="result5">
+        <h3>Result 5</h3>
+        <p>You <span class="dogPet">and your dog </span>try to swim across the Yellow Sea, and you get eaten by a shark. You die<span class="dogPet">, but your dog swims to safety</span>.</p>
+      </div>
+      <div id="result6">
+        <h3>Result 6</h3>
+        <p>The palace guards charge in to your room, and you think you hear her screaming "<span class="player-name"></span>!" as she is dragged away, but it is too faint to tell. There's no way she could have known your real name, right <span class="dogPet">you wonder out loud to your dog</span>? You live out the rest of your life cleaning the King's laundry, occasionally thinking about you ended up in the same occupation even after being transported to another time.</p>
       </div>
 <!-- Adventure Results End -->
     </div>

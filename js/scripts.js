@@ -13,11 +13,8 @@ $(document).ready(function() {
     var name = $("input#player1").val();
     var pet = $("select#player-pet").val();
     var newCharacter = new Character(name);
-
     $(".intro-page").hide();
-
     $(".player-name").text(newCharacter.nameCharacter);
-
     $("#decision1").show();
     if(pet === "dog") {
       $(".dogPet").show();
@@ -52,10 +49,14 @@ $(document).ready(function() {
       $("#result2").show();
       $("#decision-2b").hide();
     } else if (decision2b === "2") {
-      $("#decision-3b").show();
+      $("#segway-2b").show();
       $("#decision-2b").hide();
     }
   });
+  $("#segway2b-btn").click(function() {
+    $("#decision-3b").show();
+    $("#segway-2b").hide();
+  })
   $("form#decision3a-form").submit(function(event) {
     event.preventDefault();
     var decision3a = $("input:radio[name=option3a]:checked").val();
@@ -74,7 +75,7 @@ $(document).ready(function() {
       $("#decision-3c").show();
       $("#decision-3b").hide();
     } else if (decision3b === "2") {
-      $("#result2").show();
+      $("#result6").show();
       $("#decision-3b").hide();
     }
   });
