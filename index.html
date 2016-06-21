@@ -8,7 +8,7 @@
     <title></title>
   </head>
   <body>
-    <div class="intro-page">
+    <!-- <div class="intro-page">
       <div class="jumbotron">
         <div class="container">
           <h1>Choose Your Own Drama!</h1>
@@ -19,6 +19,7 @@
                 <input required id="player1" class="form-control" type="text">
               </div>
               <div class="form-group">
+                <label>Choose your pet:</label>
                 <select required class="form-control" id="player-pet">
                   <option></option>
                   <option value="cat">Cat</option>
@@ -31,9 +32,8 @@
         </div>
       </div>
       <div class="background-image jumbotron" id="intro-img">
-          <!-- <img src="img/min.jpg" alt="" /> -->
       </div>
-    </div>
+    </div> -->
     <div class="container" id="text-styling">
 <!-- Intro Page End -->
       <div id="decision1">
@@ -55,6 +55,7 @@
           </div>
           <button type="submit" class="btn" id="button1">Next</button>
         </form>
+        <img class="decision-images" src="img/decision1.png" alt="a rooftop scene with a boy on a ledge and a crowd watching"/>
       </div>
   <!-- Decision 2a Start -->
       <div id="decision-2a">
@@ -75,6 +76,7 @@
           </div>
           <button type="submit" class="btn button2">Next</button>
         </form>
+        <img class="decision-images" src="img/news-story.png" alt="a news story in an internet browser showing a girl stopping a boy from jumping off roof"/>
       </div>
   <!-- Decision 2b Start -->
       <div id="decision-2b">
@@ -95,11 +97,13 @@
           </div>
           <button type="submit" class="btn button2">Next</button>
         </form>
+        <img class="decision-images" src="img/min.jpg" alt="a bodyguard with a gun"/>
       </div>
   <!-- 2b Segway -->
       <div id="segway-2b">
         <p>You reach the edge of the roof <span class="dogPet">holding your dog</span>. Scared, you see your life flash before your eyes and you prepare to die. But before the bodyguards can shoot you, a mysterious woman emerges from the crowd and pushes you off the roof.</p>
         <button type="submit" class="btn" id="segway2b-btn">Continue</button>
+        <img class="decision-images" src="img/bodyguards-chase.jpg" alt="people chasing a guy on a roof"/>
       </div>
   <!--Decision 3a Start  -->
       <div id="decision-3a">
@@ -120,6 +124,7 @@
           </div>
           <button type="submit" class="btn button2">Next</button>
         </form>
+        <img class="decision-images" src="img/dead-meat.png" alt="a mean-looking popular guy"/>
       </div>
   <!--Decision 3b Start  -->
       <div id="decision-3b">
@@ -140,6 +145,7 @@
           </div>
           <button type="submit" class="btn button2">Next</button>
         </form>
+        <img class="decision-images" src="img/travelling-mom.jpg" alt="a mysterious lady dressed in Joseon-era clothing"/>
       </div>
   <!--Decision 3c Start  -->
       <div id="decision-3c">
@@ -163,28 +169,34 @@
       </div>
 <!-- Adventure Results Start -->
       <div id="result1">
+        <img class="decision-images" src="img/drama-ghost.jpg" alt="a scary ghost"/>
         <h3>Result 1</h3>
-        <p>You refused the scholarship. You stay in public school, graduating in the middle of your class. You keep working at your parents' dry-cleaning business. A series of health issues with your grandpa, you mother, and your brother force you to remortgage the business. They end up dying and you are left to run the business alone. Desperate, you turn to loan sharks, and they start hounding you to repay them. <span class="dogPet">You have to sell your precious dog in order to get some money to pay back your debts.</span> Scared, you increase your working hours to 20 hours a day.You die at 34, due to a mysterious stress-related illness.</p>
+        <p>You refused the scholarship. You stay in public school, graduating in the middle of your class. You keep working at your parents' dry-cleaning business. A series of health issues with your grandpa, you mother, and your brother force you to remortgage the business. They end up dying and you are left to run the business alone. Desperate, you turn to loan sharks, and they start hounding you to repay them. <span class="dogPet">You have to sell your precious dog in order to get some money to pay back your debts.</span> Scared, you increase your working hours to 20 hours a day.You die at 34, due to a mysterious stress-related illness. Your ghost haunts the earth for eternity.</p>
       </div>
       <div id="result2">
+        <img class="decision-images" src="img/shooter.jpg" alt="a woman holding a gun"/>
         <h3>Result 2</h3>
         <p>The bodyguards shoot you and you die. <span class="dogPet">The bodyguards take pity on your dog and adopt her.</span></p>
       </div>
       <div id="result3">
+        <img class="decision-images" src="img/kdrama-wedding.jpg" alt="a happy wedding"/>
         <h3>Result 3</h3>
         <p>After cursing him out, he realizes that he has never met anyone like you. You fall in love, get married right after high school, and get all the benefits of being married to a rich man. You live happily ever after.</p>
       </div>
       <div id="result4">
+        <img class="decision-images" src="img/inn.jpg" alt="a mother and daughter"/>
         <h3>Result 4</h3>
         <p>You decide to stay with your mother in 14th century Korea and live happily ever after running a small inn with her. Fourteenth century life is tough, but you're with your mother!</p>
       </div>
       <div id="result5">
+          <img class="decision-images" src="img/yellow-sea.jpg" alt="a child swimming in algea"/>
         <h3>Result 5</h3>
         <p>You <span class="dogPet">and your dog </span>try to swim across the Yellow Sea, and you get eaten by a shark. You die<span class="dogPet">, but your dog swims to safety</span>.</p>
       </div>
       <div id="result6">
+        <img class="decision-images" src="img/mom-dragged-away.jpg" alt="fuedal woman being apprehended and crying"/>
         <h3>Result 6</h3>
-        <p>The palace guards charge in to your room, and you think you hear her screaming "<span class="player-name"></span>!" as she is dragged away, but it is too faint to tell. There's no way she could have known your real name, right <span class="dogPet">you wonder out loud to your dog</span>? You live out the rest of your life cleaning the King's laundry, occasionally thinking about you ended up in the same occupation even after being transported to another time.</p>
+        <p>The palace guards charge in to your room, and you think you hear her screaming "<span class="player-name"></span>!" as she is dragged away, but it is too faint to tell. There's no way she could have known your real name, right <span class="dogPet">you wonder out loud to your dog</span>? You live out the rest of your life cleaning the King's laundry, occasionally thinking about how you ended up in the same occupation even after being transported to another time.</p>
       </div>
 <!-- Adventure Results End -->
     </div>
