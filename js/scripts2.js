@@ -11,6 +11,7 @@ $(document).ready(function(){
     event.preventDefault();
     var name = $("input#player1").val();
     var newCharacter = new Character(name);
+    $(".intro-page").hide();
     $("#decision1").show();
     $("#player-name").text(newCharacter.nameCharacter);
   });
@@ -45,6 +46,28 @@ $(document).ready(function(){
     } else if (decision2b === "2") {
       $("#decision-3b").show();
       $("#decision-2b").hide();
+    }
+  });
+  $("form#decision3a-form").submit(function(event) {
+    event.preventDefault();
+    var decision3a = $("select#option3a").val();
+    if (decision3a === "1") {
+      $("#result3").show();
+      $("#decision-3a").hide();
+    } else if (decision3a === "2") {
+      $("#result5").show();
+      $("#decision-3a").hide();
+    }
+  });
+  $("form#decision3b-form").submit(function(event) {
+    event.preventDefault();
+    var decision3b = $("select#option3b").val();
+    if (decision3b === "1") {
+      $("#result4").show();
+      $("#decision-3b").hide();
+    } else if (decision3b === "2") {
+      $("#result2").show();
+      $("#decision-3b").hide();
     }
   });
 });
