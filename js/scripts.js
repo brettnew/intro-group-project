@@ -55,10 +55,10 @@ $(document).ready(function() {
     event.preventDefault();
     var decision3a = $("input:radio[name=option3a]:checked").val();
     if (decision3a === "1") {
-      // $("#----")show();
+      $("#result3").show();
       $("#decision-3a").hide();
     } else if (decision3a === "2") {
-      // $("#----").show();
+      $("#result5").show();
       $("#decision-3a").hide();
     }
   });
@@ -66,11 +66,22 @@ $(document).ready(function() {
     event.preventDefault();
     var decision3b = $("input:radio[name=option3b]:checked").val();
     if (decision3b === "1") {
-      // $("#----").show();
+      $("#decision-3c").show();
       $("#decision-3b").hide();
     } else if (decision3b === "2") {
-      // $("#----").show();
+      $("#result2").show();
       $("#decision-3b").hide();
+    }
+  });
+  $("form#decision3c-form").submit(function(event) {
+    event.preventDefault();
+    var decision3c = $("input:radio[name=option3c]:checked").val();
+    if (decision3c === "1") {
+      $("#result4").show();
+      $("#decision-3c").hide();
+    } else if (decision3c === "2") {
+      $("#decision-2a").show();
+      $("#decision-3c").hide();
     }
   });
 });
