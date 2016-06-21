@@ -1,21 +1,46 @@
 @font-face {
-  font-family: ourFont;
+  font-family: koreanCalligraphy;
   src: url(Korean_Calligraphy.ttf);
 }
 
-h1 {
-  text-align: center;
-  font-family: ourFont;
+@font-face {
+  font-family: openingFont;
+  src: url(Awesome_South_Korea.ttf);
 }
+
+h1 {
+    font-family: openingFont;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #201F1D;
+  color: #F4F4F4;
+  margin: 0px;
+}
+
+.btn-begin {
+  color: #F4F4F4;
+  background-color: #420407;
+}
+/*#201F1D*/
+.btn-begin:hover {
+  color: #F4F4F4;
+}
+
+#intro-img {
+  background-image: url("../img/girl-intro-wallpaper.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
 
 #decision1, #decision-2a, #decision-2b, #result1, #result2, #result3, #result4, #result5, #decision-3a, #decision-3b  {
   display: none;
 }
 
-#player1 {
-  width: 200px;
-}
-
-.form-group {
-  align: center;
+input {
+  width: 100%;
+  clear: both;
+  text-align: center;
 }

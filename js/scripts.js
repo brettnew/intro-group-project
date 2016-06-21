@@ -11,11 +11,8 @@ $(document).ready(function() {
     event.preventDefault();
     var name = $("input#player1").val();
     var newCharacter = new Character(name);
-
     $(".intro-page").hide();
-
     $(".player-name").text(newCharacter.nameCharacter);
-
     $("#decision1").show();
   });
   $("form#decision-form").submit(function(event) {
