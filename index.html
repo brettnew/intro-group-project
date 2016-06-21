@@ -18,6 +18,13 @@
                 <label for="player-name">Enter your name: </label>
                 <input required id="player1" class="form-control" type="text">
               </div>
+              <div class="form-group">
+                <select required class="form-control" id="player-pet">
+                  <option></option>
+                  <option value="cat">Cat</option>
+                  <option value="dog">Dog</option>
+                </select>
+              </div>
                 <button type="submit" class="btn btn-begin">Begin!</button>
             </form>
           </div>
@@ -31,13 +38,13 @@
 <!-- Intro Page End -->
       <div id="decision1">
         <h3>Decision 1</h3>
-        <p>Hey <span class="player-name"></span>!</p>
-        <p>Your family owns a dry-cleaning business, and it is your job to make deliveries each day when you come home from the public high school that you currently attend. Today you are taking a delivery to Shinwha High School, the most prestigious and expensive private school in all of South Korea. As you get closer, you notice a crowd forming on top of the building's roof. You climb to the top of the roof, and see that there is a lone boy on the very edge. You get closer, and as you are just close enough to reach out and touch him, he jumps! Do you:</p>
+        <p>Hi <span class="player-name"></span>!</p>
+        <p>Your family owns a dry-cleaning business, and it is your job to make deliveries each day when you come home from school. Today you <span class="dogPet">and your dog</span> are taking a delivery to Shinwha High School, the most prestigious and expensive private school in all of South Korea. As you get closer to the school, you notice a crowd forming on the main building's roof. You climb to the top of the roof, and see that there is a lone boy on the very edge. You get closer, and just as you are near enough to reach out and touch him, he jumps! Do you:</p>
         <form id="decision-form">
           <div class="radio">
             <label>
             <input type="radio" name="option1" value="1" checked>
-                Reach out, grab him, and pull him to safety
+              Reach out, grab him, and pull him to safety
             </label>
           </div>
           <div class="radio">
@@ -52,12 +59,12 @@
   <!-- Decision 2a Start -->
       <div id="decision-2a">
         <h3>Decision 2a</h3>
-        <p>Wow <span class="player-name"></span> you saved him! You go home, but unbeknownst to you, a Shinwha student filmed the whole thing, and uploaded it to the Internet! By the next day, everyone has seen it, and are clamoring for you to be rewarded, and for Shinhwa High School to be investigated for allowing such an incident to take place on their campus. Desperate for good PR, Shinhwa High School offers you an all-expense paid scholarship. Do you:</p>
+        <p>Wow <span class="player-name"></span> you saved him! The crowd on the roof cheers at your heroics <span class="dogPet">and your dog barks enthusiastically at your side</span>. You go home, but unbeknownst to you, a Shinwha student filmed the whole thing, and uploaded it to the Internet! By the next day, everyone has seen it, and are clamoring for you to be rewarded, and for Shinhwa High School to be investigated for allowing such an incident to take place on their campus. Desperate for good PR, Shinhwa High School offers you an all-expense paid scholarship. Do you:</p>
         <form id="decision2a-form">
           <div class="radio">
             <label>
             <input type="radio" name="option2a" value="1" checked>
-                Take the scholarship
+              Take the scholarship
             </label>
           </div>
           <div class="radio">
@@ -72,27 +79,32 @@
   <!-- Decision 2b Start -->
       <div id="decision-2b">
         <h3>Decision 2b</h3>
-        <p>Oh no <span class="player-name"></span> you didn't save him! As you watch him plummet to his death, a woman runs from the crowd, points at you, and screams "You killed him! I will have my revenge!" She pulls a sword from her backpack, and starts running towards you. Do you:</p>
+        <p>Oh no <span class="player-name"></span> you didn't save him! As you watch him plummet to his death, two men in black suits appear from the crowd and yell "Why didn't you save him?!", and pull out their guns on you. Turns out the student who had just jumped off had bodyguards!<span class="dogPet"> Your dog starts barking angrily at the men and moves in front to protect you.</span> Do you:
         <form id="decision2b-form">
           <div class="radio">
             <label>
             <input type="radio" name="option2b" value="1" checked>
-                Stay and try to fight her
+                Stay and try to fight off the bodyguards <span class="dogPet">with your dog</span>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="option2b" value="2">
-              Jump off the roof
+              <span class="dogPet">Grab your dog and</span> RUN
             </label>
           </div>
           <button type="submit" class="btn button2">Next</button>
         </form>
       </div>
+  <!-- 2b Segway -->
+      <div id="segway-2b">
+        <p>You reach the edge of the roof <span class="dogPet">holding your dog</span>. Scared, you see your life flash before your eyes and you prepare to die. But before the bodyguards can shoot you, a mysterious woman emerges from the crowd and pushes you off the roof.</p>
+        <button type="submit" class="btn" id="segway2b-btn">Continue</button>
+      </div>
   <!--Decision 3a Start  -->
       <div id="decision-3a">
         <h3>Decision 3a</h3>
-        <p>Congratulations <span class="player-name"></span> you took the scholarship, you smarty pants! On your first day, you arrive early and excited to learn. A sudden commotion at the entryway to the school catches your attention, and you hurry over to see what is happening. Unfortunately, you trip, get an elbow to the stomach, and the gum that you were chewing is expelled, and lands...right in the hair of the most popular guy at school. He points at you, and says "You're dead meat." Do you:</p>
+        <p>Congratulations <span class="player-name"></span> you took the scholarship, you smarty pants! On your first day, you arrive early and excited to learn <span class="dogPet">while your ever faithful dog tags along</span>. A sudden commotion at the entryway to the school catches your attention, and you hurry over to see what is happening. Unfortunately, you trip, get an elbow to the stomach, and the gum that you were chewing is expelled, and lands...right in the hair of the most popular guy at school. He points at you, and says "You're dead meat." Do you:</p>
         <form id="decision3a-form">
           <div class="radio">
             <label>
@@ -103,7 +115,7 @@
           <div class="radio">
             <label>
               <input type="radio" name="option3a" value="2">
-              Flee to China
+              Flee to China <span class="dogPet">with your dog</span>
             </label>
           </div>
           <button type="submit" class="btn button2">Next</button>
@@ -112,44 +124,67 @@
   <!--Decision 3b Start  -->
       <div id="decision-3b">
         <h3>Decision 3a</h3>
-        <p>As you jump, a sudden wrinkle in time opens, and you are transported back to 14th century Korea. You open your eyes to a man demanding that you clean the king's royal garments. Using your dry-cleaning prowess, you clean them to perfection. Soon you become famous throughout the land for your skills, and one night a strange lady with a sword arrives at your dwelling and demands that you become her personal cleaner. Do you:</p>
+        <p>As you fall <span class="dogPet">with your tiny dog in your arms</span>, a sudden wrinkle in time opens, and you are transported back to 14th century Korea. You open your eyes to find you <span class="dogPet">and your dog</span> have landed on a pile of laundry. Somehow during the time travel your clothes have changed to be what 14th century Korean women wear. A man, mistaking you for a servant, demands that you clean the clothes you have landed on. Turns out those were the king's royal garments. Using your dry-cleaning prowess, you clean them to perfection. Soon you become famous throughout the land for your skills. Then one night a strange lady arrives at your dwelling and demands you come with her. You recognize her as the woman on the roof who pushed you back in time. Do you:</p>
         <form id="decision3b-form">
           <div class="radio">
             <label>
             <input type="radio" name="option3b" value="1" checked>
-                Go with the lady, no questions asked
+                Go with the lady <span class="dogPet">with your dog in tow</span>, because you have questions about what happened
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="option3b" value="2">
-              Stay in order not to anger the king
+              You call the palace guards to arrest the woman because you can't forgive her for pushing you back in time
             </label>
           </div>
           <button type="submit" class="btn button2">Next</button>
         </form>
       </div>
-    <!-- Adventure Results Start -->
-        <div id="result1">
-          <h3>Result 1</h3>
-          <p>You refused the scholarship. You stay in public school, graduating in the middle of your class. You keep working at your parents' dry-cleaning business. A series of health issues with your grandpa, you mother, and your brother force you to remortgage the business. They end up dying and you are left to run the business alone. Desperate, you turn to loan sharks, and are unable to repay them, resulting in both your legs being broken. They never heal properly, and you are unable to keep running the business. You die at 34, due to a mysterious stress-related illness.</p>
-        </div>
-        <div id="result2">
-          <h3>Result 2</h3>
-          <p>You put up a good fight, but you are no match for the crazy lady with the sword. You die.</p>
-        </div>
-        <div id="result3">
-          <h3>Result 3</h3>
-          <p>After cursing him out, he realizes that he has never met anyone like you. You fall in love, get married too young, and get all the benefits of being married to a rich man. You live happily ever after.</p>
-        </div>
-        <div id="result4">
-          <h3>Result 4</h3>
-          <p>The crazy lady turns out to be your long-lost mother. You go with her and enjoy a loving and fulfilling relationship with the mother you never knew.</p>
-        </div>
-        <div id="result5">
-          <h3>Result 5</h3>
-          <p>You try to swim across the Yellow Sea, and you get eaten by a shark. You die.</p>
-        </div>
+  <!--Decision 3c Start  -->
+      <div id="decision-3c">
+        <h3>Decision 3c</h3>
+        <p>You decide to go with the lady and she reveals to be your time travelling mom. She tells you that she was stuck in the 21st century and could only go back home to the 14th century by pushing you into it as well. You have mixed feelings about the reunion <span class="dogPet">, but your dog takes to your mom in no time</span>. Your mom tells you that she wants you to stay with her in this century. But you feel guilty about your decision to not save the boy on the roof, so your mom tells you that she can send you back to the 21st century, but you will never be able to come back to the 14th century. Do you:</p>
+        <form id="decision3c-form">
+          <div class="radio">
+            <label>
+            <input type="radio" name="option3c" value="1" checked>
+              Stay with your mom in 14th century Korea
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="option3c" value="2">
+              Go back to the time on the roof and save the boy from dying
+            </label>
+          </div>
+          <button type="submit" class="btn button2">Next</button>
+        </form>
+      </div>
+<!-- Adventure Results Start -->
+      <div id="result1">
+        <h3>Result 1</h3>
+        <p>You refused the scholarship. You stay in public school, graduating in the middle of your class. You keep working at your parents' dry-cleaning business. A series of health issues with your grandpa, you mother, and your brother force you to remortgage the business. They end up dying and you are left to run the business alone. Desperate, you turn to loan sharks, and they start hounding you to repay them. <span class="dogPet">You have to sell your precious dog in order to get some money to pay back your debts.</span> Scared, you increase your working hours to 20 hours a day.You die at 34, due to a mysterious stress-related illness.</p>
+      </div>
+      <div id="result2">
+        <h3>Result 2</h3>
+        <p>The bodyguards shoot you and you die. <span class="dogPet">The bodyguards take pity on your dog and adopt her.</span></p>
+      </div>
+      <div id="result3">
+        <h3>Result 3</h3>
+        <p>After cursing him out, he realizes that he has never met anyone like you. You fall in love, get married right after high school, and get all the benefits of being married to a rich man. You live happily ever after.</p>
+      </div>
+      <div id="result4">
+        <h3>Result 4</h3>
+        <p>You decide to stay with your mother in 14th century Korea and live happily ever after running a small inn with her. Fourteenth century life is tough, but you're with your mother!</p>
+      </div>
+      <div id="result5">
+        <h3>Result 5</h3>
+        <p>You <span class="dogPet">and your dog </span>try to swim across the Yellow Sea, and you get eaten by a shark. You die<span class="dogPet">, but your dog swims to safety</span>.</p>
+      </div>
+      <div id="result6">
+        <h3>Result 6</h3>
+        <p>The palace guards charge in to your room, and you think you hear her screaming "<span class="player-name"></span>!" as she is dragged away, but it is too faint to tell. There's no way she could have known your real name, right <span class="dogPet">you wonder out loud to your dog</span>? You live out the rest of your life cleaning the King's laundry, occasionally thinking about you ended up in the same occupation even after being transported to another time.</p>
       </div>
 <!-- Adventure Results End -->
     </div>
