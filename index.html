@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-  <!-- Intro Page Start -->
+<!-- Intro Page Start -->
       <div class="intro-page">
         <h1>Choose Your Own Drama!</h1>
         <div id="blanks">
@@ -17,6 +17,13 @@
             <div class="form-group">
               <label for="player-name">Enter your name: </label>
               <input required id="player1" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <select required class="form-control" id="player-pet">
+                <option></option>
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+              </select>
             </div>
             <button type="submit" class="btn">Begin!</button>
           </form>
@@ -26,7 +33,7 @@
       <div id="decision1">
         <h3>Decision 1</h3>
         <p>Hey <span class="player-name"></span>!</p>
-        <p>Your family owns a dry-cleaning business, and it is your job to make deliveries each day when you come home from the public high school that you currently attend. Today you are taking a delivery to Shinwha High School, the most prestigious and expensive private school in all of South Korea. As you get closer, you notice a crowd forming on top of the building's roof. You climb to the top of the roof, and see that there is a lone boy on the very edge. You get closer, and as you are just close enough to reach out and touch him, he jumps! Do you:</p>
+        <p>Your family owns a dry-cleaning business, and it is your job to make deliveries each day when you come home from the public high school that you currently attend. Today you <span class="dogPet">and your dog</span> are taking a delivery to Shinwha High School, the most prestigious and expensive private school in all of South Korea. As you get closer, you notice a crowd forming on top of the building's roof. You climb to the top of the roof, and see that there is a lone boy on the very edge. You get closer, and as you are just close enough to reach out and touch him, he jumps! Do you:</p>
         <form id="decision-form">
           <div class="radio">
             <label>
@@ -46,7 +53,7 @@
   <!-- Decision 2a Start -->
       <div id="decision-2a">
         <h3>Decision 2a</h3>
-        <p>Wow <span class="player-name"></span> you saved him! You go home, but unbeknownst to you, a Shinwha student filmed the whole thing, and uploaded it to the Internet! By the next day, everyone has seen it, and are clamoring for you to be rewarded, and for Shinhwa High School to be investigated for allowing such an incident to take place on their campus. Desperate for good PR, Shinhwa High School offers you an all-expense paid scholarship. Do you:</p>
+        <p>Wow <span class="player-name"></span> you saved him! The crowd on the roof cheers at your heroics <span class="dogPet">and your dog barks enthusiastically at your side</span>. You go home, but unbeknownst to you, a Shinwha student filmed the whole thing, and uploaded it to the Internet! By the next day, everyone has seen it, and are clamoring for you to be rewarded, and for Shinhwa High School to be investigated for allowing such an incident to take place on their campus. Desperate for good PR, Shinhwa High School offers you an all-expense paid scholarship. Do you:</p>
         <form id="decision2a-form">
           <div class="radio">
             <label>
@@ -66,27 +73,31 @@
   <!-- Decision 2b Start -->
       <div id="decision-2b">
         <h3>Decision 2b</h3>
-        <p>Oh no <span class="player-name"></span> you didn't save him! As you watch him plummet to his death, a woman runs from the crowd, points at you, and screams "You killed him! I will have my revenge!" She pulls a sword from her backpack, and starts running towards you. Do you:</p>
+        <p>Oh no <span class="player-name"></span> you didn't save him! As you watch him plummet to his death, two men in black suits appear from the crowd and yell "Why didn't you save him?!", and pull out their guns on you. Turns out the student who had just jumped off had bodyguards!<span class="dogPet"> Your dog starts barking angrily at the men and moves in front to protect you.</span> Do you:
         <form id="decision2b-form">
           <div class="radio">
             <label>
             <input type="radio" name="option2b" value="1" checked>
-                Stay and try to fight her
+                Stay and try to fight off the bodyguards <span class="dogPet">with your dog</span>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="option2b" value="2">
-              Jump off the roof
+              <span class="dogPet">Grab your dog and</span> RUN
             </label>
           </div>
           <button type="submit" class="btn button2">Next</button>
         </form>
       </div>
+  <!-- 2b Segway -->
+      <div id="2b-segway">
+        <p>You reach the edge of the roof <span class="dogPet">holding your dog</span>. Scared, you see your life flash before your eyes and you prepare to die. But before the bodyguards can shoot you, a mysterious woman emerges from the crowd and pushes you off the roof.</p>
+      </div>
   <!--Decision 3a Start  -->
       <div id="decision-3a">
         <h3>Decision 3a</h3>
-        <p>Congratulations <span class="player-name"></span> you took the scholarship, you smarty pants! On your first day, you arrive early and excited to learn. A sudden commotion at the entryway to the school catches your attention, and you hurry over to see what is happening. Unfortunately, you trip, get an elbow to the stomach, and the gum that you were chewing is expelled, and lands...right in the hair of the most popular guy at school. He points at you, and says "You're dead meat." Do you:</p>
+        <p>Congratulations <span class="player-name"></span> you took the scholarship, you smarty pants! On your first day, you arrive early and excited to learn <span class="dogPet">while your ever faithful dog tags along</span>. A sudden commotion at the entryway to the school catches your attention, and you hurry over to see what is happening. Unfortunately, you trip, get an elbow to the stomach, and the gum that you were chewing is expelled, and lands...right in the hair of the most popular guy at school. He points at you, and says "You're dead meat." Do you:</p>
         <form id="decision3a-form">
           <div class="radio">
             <label>
@@ -97,7 +108,7 @@
           <div class="radio">
             <label>
               <input type="radio" name="option3a" value="2">
-              Flee to China
+              Flee to China <span class="dogPet">with your dog</span>
             </label>
           </div>
           <button type="submit" class="btn button2">Next</button>
@@ -106,18 +117,18 @@
   <!--Decision 3b Start  -->
       <div id="decision-3b">
         <h3>Decision 3a</h3>
-        <p>As you jump, a sudden wrinkle in time opens, and you are transported back to 14th century Korea. You open your eyes to a man demanding that you clean the king's royal garments. Using your dry-cleaning prowess, you clean them to perfection. Soon you become famous throughout the land for your skills, and one night a strange lady with a sword arrives at your dwelling and demands that you become her personal cleaner. Do you:</p>
+        <p>As you fall <span class="dogPet">with your tiny dog in your arms</span>, a sudden wrinkle in time opens, and you are transported back to 14th century Korea. You open your eyes to find you <span class="dogPet">and your dog</span> have landed on a pile of laundry. Somehow during the time travel your clothes have changed to be what 14th century Korean women wear. A man, mistaking you for a servant, demands that you clean the clothes you have landed on. Turns out those were the king's royal garments. Using your dry-cleaning prowess, you clean them to perfection. Soon you become famous throughout the land for your skills. Then one night a strange lady with a sword arrives at your dwelling and demands you come with her. You recognize her as the woman on the roof who pushed you into the wrinkle in time. Do you:</p>
         <form id="decision3b-form">
           <div class="radio">
             <label>
             <input type="radio" name="option3b" value="1" checked>
-                Go with the lady, no questions asked
+                Go with the lady, because you have questions to ask <span class="dogPet">and of course your dog follows along</span>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="option3b" value="2">
-              Stay in order not to anger the king
+              Stay in the palace so as to not anger the king
             </label>
           </div>
           <button type="submit" class="btn button2">Next</button>

@@ -19,3 +19,7 @@ h1 {
 .form-group {
   align: center;
 }
+
+.dogPet {
+  display: none;
+}
