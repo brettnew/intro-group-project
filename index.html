@@ -24,14 +24,26 @@
 <!-- Intro Page End -->
     <div id="decision1">
       <h3>Decision 1</h3>
-      <p>Hello, <span id="player-name"></span>,</p>
+      <p>Hello <span id="player-name"></span>,</p>
       <p>Your family owns a dry-cleaning business, and it is your job to make deliveries each day one you come home from the public high school that you currently attend. Today you are taking a delivery to Shinwha High School, the most prestigious and expensive private school in all of South Korea. As you get closer, you notice a crowd forming on top of the building's roof. You climb to the top of the roof, and see that there is a lone boy on the very edge. You get closer, and as you are just close enough to reach out and touch him, he jumps! Do you:</p>
       <form id="decision-form">
-        <select required class="form-control" id="option1">
+        <div class="radio">
+          <label>
+          <input type="radio" name="option1" value="1" checked>
+              Reach out, grab him, and pull him to safety
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="option1" value="2">
+            Let him fall to his death
+          </label>
+        </div>
+        <!-- <select required class="form-control" id="option1">
           <option></option>
           <option value="1">Reach out, grab him, and pull him to safety</option>
           <option value="2">Let him fall to his death</option>
-        </select>
+        </select> -->
         <button type="submit" class="btn" id="button1">Next</button>
       </form>
     </div>
