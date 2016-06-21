@@ -52,10 +52,17 @@ $(document).ready(function() {
   });
   $("form#decision2b-form").submit(function(event) {
     event.preventDefault();
+    var newSpecialItem = new SpecialItem();
+    var petType = $("select#player-pet").val();
     var decision2b = $("input:radio[name=option2b]:checked").val();
     if (decision2b === "1") {
-      $("#result2").show();
-      $("#decision-2b").hide();
+      if ((newSpecialItem.item === "lucky rock") && (petType === "lizard")) {
+        $("#result9").show();
+        $("#decision-2b").hide();
+      } else {
+        $("#result2").show();
+        $("#decision-2b").hide();
+      }
     } else if (decision2b === "2") {
       $("#segway-2b").show();
       $("#decision-2b").hide();
