@@ -4,6 +4,10 @@ function Character(name, petName){
   this.petName = petName;
 };
 
+function SpecialItem(item) {
+  this.item = item;
+}
+
 
 
 //User Interface Logic
@@ -24,6 +28,7 @@ $(document).ready(function() {
       $(".catPet").show();
     }
   });
+  var newSpecialItem = new SpecialItem(item);
   $("form#decision-form").submit(function(event) {
     event.preventDefault();
     var decision1 = $("input:radio[name=option1]:checked").val();
