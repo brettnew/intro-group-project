@@ -44,3 +44,8 @@ input {
   clear: both;
   text-align: center;
 }
+
+#text-styling {
+  margin-left: 15%;
+  font-size: 20px;
+}
