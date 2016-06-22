@@ -1,31 +1,49 @@
-@font-face {
-  font-family: koreanCalligraphy;
-  src: url(Korean_Calligraphy.ttf);
+body {
+  font-family: Georgia;
+  background-color: #FFFFFF;
+  /*background-color: #FBE6E5;*/
 }
+
+/*<-----------Intro Form Styling--------->*/
 
 @font-face {
   font-family: openingFont;
   src: url(Awesome_South_Korea.ttf);
 }
 
-h1 {
-    font-family: openingFont;
-}
-
 .jumbotron {
   text-align: center;
   background-color: #201F1D;
-  color: #F4F4F4;
+  color: #FFFFFF;
   margin: 0px;
 }
 
-.btn-begin {
-  color: #F4F4F4;
-  background-color: #420407;
+h3 {
+  font-size: 25pt;
 }
-/*#201F1D*/
-.btn-begin:hover {
-  color: #F4F4F4;
+
+p {
+  font-size: 20pt;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 20pt;
+  text-align: center;
+}
+
+.input-text {
+  font-size: 15pt;
+  background-color: #201F1D;
+  color: #FFFFFF;
+}
+
+.pet-label {
+  margin-top: 30px;
+}
+
+#intro-form {
+  height: 400px;
 }
 
 #intro-img {
@@ -34,23 +52,25 @@ h1 {
   background-size: cover;
 }
 
+/*<-----------Decisions Styling--------->*/
+
 #decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset {
   display: none;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 200px;
+  color: #000000;
 }
 
-input {
-  width: 100%;
-  clear: both;
+.page-header {
+  margin-top: 200px;
+  font-size: 55pt;
   text-align: center;
 }
 
-#text-styling {
-  margin-left: 15%;
-  font-size: 20px;
-}
-
-.dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry{
-  display: none;
+#h1 {
+  font-size: 100pt;
+  font-family: openingFont;
 }
 
 .decision-images {
@@ -61,6 +81,21 @@ input {
   border-color: black;
 }
 
-body {
-  background-color: #FBE6E5;
+/*<-----------Btns Styling--------->*/
+
+.btn-begin {
+  margin-top: 30px;
+  font-size: 25pt;
+  color: #FFFFFF;
+  background-color: #420407;
+}
+
+.btn-begin:hover {
+  color: #F4F4F4;
+}
+
+/*<-----------Display: None--------->*/
+
+.dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry{
+  display: none;
 }

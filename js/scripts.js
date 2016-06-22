@@ -9,7 +9,6 @@ function SpecialItem(item) {
 }
 
 
-
 //User Interface Logic
 $(document).ready(function() {
   $("form#intro-form").submit(function(event){
@@ -56,8 +55,7 @@ $(document).ready(function() {
       $("#decision-3a").show();
       $("#decision-2a").hide();
     } else if (decision2a === "2") {
-      $("#result1").show();
-      $("#reset").show();
+      $("#result1").fadeToggle().delay(1000);
       $("#decision-2a").hide();
     }
   });
@@ -68,11 +66,11 @@ $(document).ready(function() {
     var decision2b = $("input:radio[name=option2b]:checked").val();
     if (decision2b === "1") {
       if ((newSpecialItem.item === "lucky rock") && (petType === "lizard")) {
-        $("#result9").show();
         $("#reset").show();
+        $("#result9").fadeToggle().delay(1000);
         $("#decision-2b").hide();
       } else {
-        $("#result2").show();
+        $("#result2").fadeToggle().delay(1000);
         $("#decision-2b").hide();
         $("#reset").show();
       }
@@ -91,16 +89,16 @@ $(document).ready(function() {
     var decision3a = $("input:radio[name=option3a]:checked").val();
     if (decision3a === "1") {
       if (newSpecialItem.item === "mini sewing kit") {
-        $("#result8").show();
+        $("#result8").fadeToggle().delay(1000);
         $("#reset").show();
         $("#decision-3a").hide();
       } else {
-        $("#result3").show();
+        $("#result3").fadeToggle().delay(1000);
         $("#reset").show();
         $("#decision-3a").hide();
       }
     } else if (decision3a === "2") {
-      $("#result5").show();
+      $("#result5").fadeToggle().delay(1000);
       $("#reset").show();
       $("#decision-3a").hide();
     }
@@ -114,11 +112,11 @@ $(document).ready(function() {
       $("#decision-3b").hide();
     } else if (decision3b === "2") {
       if (newSpecialItem.item === "locket") {
-        $("#result7").show();
+        $("#result7").fadeToggle().delay(1000);
         $("#reset").show();
         $("#decision-3b").hide();
       } else {
-        $("#result6").show();
+        $("#result6").fadeToggle().delay(1000);
         $("#reset").show();
         $("#decision-3b").hide();
       }
@@ -128,7 +126,7 @@ $(document).ready(function() {
     event.preventDefault();
     var decision3c = $("input:radio[name=option3c]:checked").val();
     if (decision3c === "1") {
-      $("#result4").show();
+      $("#result4").fadeToggle().delay(1000);
       $("#reset").show();
       $("#decision-3c").hide();
     } else if (decision3c === "2") {
