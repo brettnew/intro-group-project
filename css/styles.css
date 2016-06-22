@@ -1,11 +1,24 @@
 body {
   font-family: Georgia;
-  background-color: #FBE6E5;
+  /*background-color: #FBE6E5;*/
 }
 
-.page-header {
-  font-size: 55pt;
+/*<-----------Intro Form Styling--------->*/
+
+@font-face {
+  font-family: openingFont;
+  src: url(Awesome_South_Korea.ttf);
+}
+
+.jumbotron {
   text-align: center;
+  background-color: #201F1D;
+  color: #F4F4F4;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 25pt;
 }
 
 p {
@@ -18,52 +31,14 @@ h4 {
   text-align: center;
 }
 
-#text-styling {
-  margin-left: 15%;
-  margin-right: 15%;
-  font-size: 20px;
-}
-
-@font-face {
-  font-family: koreanCalligraphy;
-  src: url(Korean_Calligraphy.ttf);
-}
-
-@font-face {
-  font-family: openingFont;
-  src: url(Awesome_South_Korea.ttf);
-}
-
-#h1 {
-  font-size: 100pt;
-  font-family: openingFont;
-}
-
-.form-label {
+.input-text {
   font-size: 15pt;
-  margin-top: 25px;
-}
-
-#petname-label {
-  margin-top: 30px;
-}
-
-.jumbotron {
-  text-align: center;
   background-color: #201F1D;
-  color: #F4F4F4;
-  margin: 0px;
+  color: #FFFFFF;
 }
 
-.btn-begin {
+.pet-label {
   margin-top: 30px;
-  font-size: 25pt;
-  color: #F4F4F4;
-  background-color: #420407;
-}
-/*#201F1D*/
-.btn-begin:hover {
-  color: #F4F4F4;
 }
 
 #intro-form {
@@ -76,18 +51,23 @@ h4 {
   background-size: cover;
 }
 
-/*#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c {
-  display: none;
-}*/
+/*<-----------Decisions Styling--------->*/
 
-input {
-  width: 100%;
-  clear: both;
+#text-styling {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 200px;
+}
+
+.page-header {
+  margin-top: 200px;
+  font-size: 55pt;
   text-align: center;
 }
 
-.dogPet, .catPet, .lizardPet {
-  display: none;
+#h1 {
+  font-size: 100pt;
+  font-family: openingFont;
 }
 
 .decision-images {
@@ -96,4 +76,28 @@ input {
   margin-top: 7%;
   border: 3px solid;
   border-color: black;
+}
+
+/*<-----------Btns Styling--------->*/
+
+.btn-begin {
+  margin-top: 30px;
+  font-size: 25pt;
+  color: #F4F4F4;
+  background-color: #420407;
+}
+
+/*#201F1D*/
+.btn-begin:hover {
+  color: #F4F4F4;
+}
+
+/*<-----------Display: None--------->*/
+
+#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c {
+  display: none;
+}
+
+.dogPet, .catPet, .lizardPet {
+  display: none;
 }
