@@ -21,23 +21,22 @@ No known bugs.
 
 The program should handle: | Example Input | Example Output
 ----- | ----- | -----
-Spec 1 | Example Input:  | Example Output:
+The program will take the player's name entered in the beginning and display it in the story | Input: Player1 | Output: Player1
 
-The program should take the user's name they enter and display it
-  input: Player1
-  output: Player1
+The program will take the pet's name entered in the beginning and display it periodically in the story | Input: PetName | Output: PetName
 
-The program should lead to 2 results based on decisions made
-  input: option 1, yes, option 2 no
-  output: result 2
+The program will output specific sentences in the story based on the pet selected at the start | Input: dog | Output: "Media Frenzy" adds the sentence "your dog barks enthusiastically at your side"
 
-The program should handle multiple results based on the story and different decisions made
-  input: option 1, yes, option 2, no, option 3 no
-  output: result 5
+The program will lead to different decision pages depending on the special item chosen on the "Journey Begins" page | Input: locket and radio button 2, checked on page "Time Warp" | Output: Result 7
 
-The program should change the story based on options  selected at the start
-  input: dog
-  output: result 2: your dog helps you
+The program will lead to another decision page depending on the radio button selected in the current decision page| Input: radio button 1, checked on "Journey Begins" page | Output: "Media Frenzy" page
+
+The program will lead to one result based on the radio button selected on the last decision page of the game | Input: radio button 2, checked on "Media Frenzy" page| Output: Result 1 page
+
+The side bar will display the player's name, pet's name and special item | ----- | ----
+
+The side bar will display a facial expression icon depending on the content of the page | ---- | -----
+
 ## Support and Contact Details
 
 Contact Epicodus for support in running this program.
