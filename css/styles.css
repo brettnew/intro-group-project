@@ -1,3 +1,7 @@
+body {
+  font-family: serif;
+}
+
 @font-face {
   font-family: koreanCalligraphy;
   src: url(Korean_Calligraphy.ttf);
@@ -8,8 +12,18 @@
   src: url(Awesome_South_Korea.ttf);
 }
 
-h1 {
-    font-family: openingFont;
+#h1 {
+  font-size: 100pt;
+  font-family: openingFont;
+}
+
+label {
+  font-size: 15pt;
+  margin-top: 20px;
+}
+
+#petname-label {
+  margin-top: 30px;
 }
 
 .jumbotron {
@@ -20,6 +34,8 @@ h1 {
 }
 
 .btn-begin {
+  margin-top: 30px;
+  font-size: 25pt;
   color: #F4F4F4;
   background-color: #420407;
 }
@@ -28,15 +44,19 @@ h1 {
   color: #F4F4F4;
 }
 
+#intro-form {
+  height: 400px;
+}
+
 #intro-img {
   background-image: url("../img/girl-intro-wallpaper.jpg");
   height: 100vh;
   background-size: cover;
 }
 
-/*#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c {
+#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c {
   display: none;
-}*/
+}
 
 input {
   width: 100%;

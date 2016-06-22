@@ -10,28 +10,26 @@
   <body>
     <div class="intro-page">
       <div class="jumbotron">
+        <h1 id="h1">Choose Your Own Drama!</h1>
         <div class="container">
-          <h1>Choose Your Own Drama!</h1>
-          <div id="blanks">
-            <form id="intro-form">
-              <div class="form-group">
-                <label for="player-name">Enter Your Name</label>
-                <input required id="player1" class="form-control" type="text">
-              </div>
-              <div class="form-group">
-                <label>Choose Your Pet</label>
-                <select required class="form-control" id="player-pet">
-                  <option></option>
-                  <option value="cat">Cat</option>
-                  <option value="dog">Dog</option>
-                  <option value="lizard">Lizard</option>
-                </select>
-                <label>What is your pet's name?</label>
-                <input required id="pet-name" class="form-control" type="text">
-              </div>
-                <button type="submit" class="btn btn-begin">Start Adventure!</button>
-            </form>
-          </div>
+          <form id="intro-form">
+            <div class="form-group">
+              <label for="player-name">Enter Your Name</label>
+              <input required id="player1" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Choose Your Pet</label>
+              <select required class="form-control" id="player-pet">
+                <option></option>
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="lizard">Lizard</option>
+              </select>
+              <label id="petname-label">What is your pet's name?</label>
+              <input required id="pet-name" class="form-control" type="text">
+            </div>
+              <button type="submit" class="btn btn-begin">Start Adventure!</button>
+          </form>
         </div>
       </div>
       <div class="background-image jumbotron" id="intro-img"></div>
