@@ -1,5 +1,27 @@
 body {
-  font-family: serif;
+  font-family: Georgia;
+  background-color: #FBE6E5;
+}
+
+.page-header {
+  font-size: 55pt;
+  text-align: center;
+}
+
+p {
+  font-size: 20pt;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 20pt;
+  text-align: center;
+}
+
+#text-styling {
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 20px;
 }
 
 @font-face {
@@ -17,9 +39,9 @@ body {
   font-family: openingFont;
 }
 
-label {
+.form-label {
   font-size: 15pt;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 #petname-label {
@@ -54,19 +76,14 @@ label {
   background-size: cover;
 }
 
-#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c {
+/*#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c {
   display: none;
-}
+}*/
 
 input {
   width: 100%;
   clear: both;
   text-align: center;
-}
-
-#text-styling {
-  margin-left: 15%;
-  font-size: 20px;
 }
 
 .dogPet, .catPet, .lizardPet {
@@ -79,8 +96,4 @@ input {
   margin-top: 7%;
   border: 3px solid;
   border-color: black;
-}
-
-body {
-  background-color: #FBE6E5;
 }
