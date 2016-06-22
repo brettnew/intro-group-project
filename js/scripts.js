@@ -18,6 +18,7 @@ $(document).ready(function() {
     var petType = $("select#player-pet").val();
     var inputtedPetName = $("input#pet-name").val();
     var newCharacter = new Character(name, inputtedPetName);
+    var personalityType = $("#player-personality").val();
     $(".intro-page").hide();
     $(".player-name").text(newCharacter.nameCharacter);
     $(".petsName").text(newCharacter.petName);
@@ -28,6 +29,13 @@ $(document).ready(function() {
       $(".catPet").show();
     } else if (petType === "lizard") {
       $(".lizardPet").show();
+    }
+    if(personalityType === "shy") {
+      $(".personality-shy").show();
+    } else if (personalityType === "calm") {
+      $(".personality-calm").show();
+    } else if (personalityType === "angry") {
+      $(".personality-angry").show();
     }
   });
   $("form#decision-form").submit(function(event) {
