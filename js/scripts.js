@@ -57,6 +57,7 @@ $(document).ready(function() {
       $("#decision-2a").hide();
     } else if (decision2a === "2") {
       $("#result1").show();
+      $("#reset").show();
       $("#decision-2a").hide();
     }
   });
@@ -68,10 +69,12 @@ $(document).ready(function() {
     if (decision2b === "1") {
       if ((newSpecialItem.item === "lucky rock") && (petType === "lizard")) {
         $("#result9").show();
+        $("#reset").show();
         $("#decision-2b").hide();
       } else {
         $("#result2").show();
         $("#decision-2b").hide();
+        $("#reset").show();
       }
     } else if (decision2b === "2") {
       $("#segway-2b").show();
@@ -89,13 +92,16 @@ $(document).ready(function() {
     if (decision3a === "1") {
       if (newSpecialItem.item === "mini sewing kit") {
         $("#result8").show();
+        $("#reset").show();
         $("#decision-3a").hide();
       } else {
         $("#result3").show();
+        $("#reset").show();
         $("#decision-3a").hide();
       }
     } else if (decision3a === "2") {
       $("#result5").show();
+      $("#reset").show();
       $("#decision-3a").hide();
     }
   });
@@ -109,9 +115,11 @@ $(document).ready(function() {
     } else if (decision3b === "2") {
       if (newSpecialItem.item === "locket") {
         $("#result7").show();
+        $("#reset").show();
         $("#decision-3b").hide();
       } else {
         $("#result6").show();
+        $("#reset").show();
         $("#decision-3b").hide();
       }
     }
@@ -121,10 +129,17 @@ $(document).ready(function() {
     var decision3c = $("input:radio[name=option3c]:checked").val();
     if (decision3c === "1") {
       $("#result4").show();
+      $("#reset").show();
       $("#decision-3c").hide();
     } else if (decision3c === "2") {
       $("#decision-2a").show();
       $("#decision-3c").hide();
     }
+  });
+  $(".btn-reset").click(function(){
+    $(".intro-page").show();
+    $("#reset").hide();
+    $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry").hide();
+
   });
 });
