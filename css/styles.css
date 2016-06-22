@@ -55,13 +55,13 @@ h4 {
 /*<-----------Decisions Styling--------->*/
 
 #sidebar {
-  float: left;
   color: #FFFFFF;
   background-color: #000000;
-  height: 500px;
+  height: 1200px;
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 150px;
+  position: fixed;
 }
 
 .decision-content {
