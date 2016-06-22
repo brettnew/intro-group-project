@@ -1,6 +1,7 @@
 //Business Logic
 var resultArray = [];
 var runningResults = [];
+
 function Character(name, petName){
   this.nameCharacter = name;
   this.petName = petName;
@@ -151,8 +152,9 @@ $(document).ready(function() {
     }
     console.log(runningResults.length);
 
-    function foo(resultArray) {
-    var a = [], b = [], prev;
+    function compare(resultArray) {
+
+     var a = [], b = [], prev;
 
     resultArray.sort();
     for ( var i = 0; i < resultArray.length; i++ ) {
@@ -165,10 +167,12 @@ $(document).ready(function() {
         prev = resultArray[i];
     }
 
-    return [a, b];
+    return a;
 }
-var result = foo(resultArray);
-alert( + result[0])
+    var endings = compare(resultArray);
+    debugger;
+    $("#result-sidebar").text(endings.length);
+    alert(endings)
 
 
     $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry").hide();
