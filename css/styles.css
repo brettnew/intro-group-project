@@ -22,14 +22,14 @@ h3 {
   font-size: 18pt;
 }
 
-p {
-  font-size: 20pt;
-}
-
 h4 {
   font-weight: bold;
   font-size: 20pt;
   text-align: center;
+}
+
+p {
+  font-size: 20pt;
 }
 
 .input-text {
@@ -57,7 +57,7 @@ h4 {
 #sidebar {
   color: #FFFFFF;
   background-color: #000000;
-  height: 1200px;
+  height: 100vh;
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 150px;
@@ -66,6 +66,7 @@ h4 {
 
 .decision-content {
   margin-right: 3%;
+  margin-left: 100px;
   color: #000000;
 }
 
@@ -85,15 +86,11 @@ h4 {
 }
 
 .decision-images {
-  /*height: 100%;
-  width: 100%;
-  margin-top: 7%;*/
   border: 3px solid;
   border-color: black;
   background-size: cover;
   width: 100%;
-  padding-left: 0px;
-  padding-right: 0px;
+  margin-left: 50px;
 }
 
 /*<-----------Btns Styling--------->*/
