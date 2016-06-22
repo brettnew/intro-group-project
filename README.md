@@ -38,6 +38,10 @@ The program should handle multiple results based on the story and different deci
 The program should change the story based on options  selected at the start
   input: dog
   output: result 2: your dog helps you
+
+The program should track which results have been completed
+  input: Try again
+  output: Result 1 completed
 ## Support and Contact Details
 
 Contact Epicodus for support in running this program.

@@ -1,4 +1,6 @@
 //Business Logic
+var resultArray = [];
+var runningResults = [];
 function Character(name, petName){
   this.nameCharacter = name;
   this.petName = petName;
@@ -56,6 +58,7 @@ $(document).ready(function() {
       $("#decision-2a").hide();
     } else if (decision2a === "2") {
       $("#result1").fadeToggle().delay(1000);
+      $("#reset").show();
       $("#decision-2a").hide();
     }
   });
@@ -139,10 +142,22 @@ $(document).ready(function() {
     $("#reset").hide();
 
     for (i = 1; i<10; i++) {
-      if ($(".result" + i).css("display")=== "none") {
-        alert("hi");
+      if ($("#result" + i).css("display") != "none") {
+        resultArray.unshift(i);
+        $("#checklist" + resultArray[0]).show();
+        alert("hi" + i + resultArray);
       }
     }
+
+    for (i = 0; i <= runningResults; i++) {
+      if(resultArray[0] !== runningResults[i]){
+       runningResults.push(resultArray[0]);
+      }
+    
+    }
+    alert(runningResults);
+
+
     $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry").hide();
 
   });
