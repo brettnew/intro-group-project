@@ -148,14 +148,26 @@ $(document).ready(function() {
         alert("hi" + i + resultArray);
       }
     }
+    console.log(runningResults.length);
 
-    for (i = 0; i <= runningResults; i++) {
-      if(resultArray[0] !== runningResults[i]){
-       runningResults.push(resultArray[0]);
-      }
-    
+    function foo(resultArray) {
+    var a = [], b = [], prev;
+
+    resultArray.sort();
+    for ( var i = 0; i < resultArray.length; i++ ) {
+        if ( resultArray[i] !== prev ) {
+            a.push(resultArray[i]);
+            b.push(1);
+        } else {
+            b[b.length-1]++;
+        }
+        prev = resultArray[i];
     }
-    alert(runningResults);
+
+    return [a, b];
+}
+var result = foo(resultArray);
+alert( + result[0])
 
 
     $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry").hide();
