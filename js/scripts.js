@@ -142,6 +142,7 @@ $(document).ready(function() {
   $(".btn-reset").click(function(){
     $(".intro-page").show();
     $("#reset").hide();
+    $("#result-total").show();
 
     for (i = 1; i<10; i++) {
       if ($("#result" + i).css("display") != "none") {
