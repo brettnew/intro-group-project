@@ -1,7 +1,6 @@
 body {
   font-family: Georgia;
-  background-color: #FFFFFF;
-  /*background-color: #FBE6E5;*/
+  background-color: #191512;
 }
 
 /*<-----------Intro Form Styling--------->*/
@@ -13,7 +12,7 @@ body {
 
 .jumbotron {
   text-align: center;
-  background-color: #201F1D;
+  background-color: #191512;
   color: #FFFFFF;
   margin: 0px;
 }
@@ -34,7 +33,7 @@ p {
 
 .input-text {
   font-size: 13pt;
-  background-color: #201F1D;
+  background-color: #191512;
   color: #FFFFFF;
 }
 
@@ -56,7 +55,7 @@ p {
 
 #sidebar {
   color: #FFFFFF;
-  background-color: #000000;
+  background-color: #191512;
   height: 100vh;
   padding-left: 60px;
   padding-right: 60px;
@@ -67,10 +66,10 @@ p {
 .decision-content {
   margin-right: 3%;
   margin-left: 100px;
-  color: #000000;
+  color: #FFFFFF;
 }
 
-#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, #sidebar, #result-total{
+#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, #sidebar, #result-total {
   display: none;
 }
 
@@ -86,8 +85,6 @@ p {
 }
 
 .decision-images {
-  border: 3px solid;
-  border-color: black;
   background-size: cover;
   width: 100%;
   margin-left: 50px;
@@ -108,11 +105,11 @@ p {
 }
 
 .btn-reset {
-  margin-left: 38%;
+  margin-left: 45%;
 }
 
 /*<-----------Pets & Personalities Styling--------->*/
 
-.dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry{
+.dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry {
   display: none;
 }
