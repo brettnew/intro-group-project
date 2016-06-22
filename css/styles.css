@@ -1,5 +1,6 @@
 body {
   font-family: Georgia;
+  background-color: #FFFFFF;
   /*background-color: #FBE6E5;*/
 }
 
@@ -13,7 +14,7 @@ body {
 .jumbotron {
   text-align: center;
   background-color: #201F1D;
-  color: #F4F4F4;
+  color: #FFFFFF;
   margin: 0px;
 }
 
@@ -53,10 +54,12 @@ h4 {
 
 /*<-----------Decisions Styling--------->*/
 
-#text-styling {
+#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c {
+  display: none;
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 200px;
+  color: #000000;
 }
 
 .page-header {
@@ -83,20 +86,15 @@ h4 {
 .btn-begin {
   margin-top: 30px;
   font-size: 25pt;
-  color: #F4F4F4;
+  color: #FFFFFF;
   background-color: #420407;
 }
 
-/*#201F1D*/
 .btn-begin:hover {
   color: #F4F4F4;
 }
 
 /*<-----------Display: None--------->*/
-
-#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c {
-  display: none;
-}
 
 .dogPet, .catPet, .lizardPet {
   display: none;
