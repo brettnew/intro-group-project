@@ -43,7 +43,7 @@ h4 {
 }
 
 #intro-form {
-  height: 400px;
+  height: 500px;
 }
 
 #intro-img {
@@ -92,6 +92,10 @@ h4 {
 
 .btn-begin:hover {
   color: #F4F4F4;
+}
+
+.btn-reset {
+  margin-left: 35%;
 }
 
 /*<-----------Display: None--------->*/
