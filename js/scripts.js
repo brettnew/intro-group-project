@@ -147,32 +147,26 @@ $(document).ready(function() {
       if ($("#result" + i).css("display") != "none") {
         resultArray.unshift(i);
         $("#checklist" + resultArray[0]).show();
-        alert("hi" + i + resultArray);
       }
     }
     console.log(runningResults.length);
 
     function compare(resultArray) {
 
-     var a = [], b = [], prev;
+     var a = [], prev;
 
     resultArray.sort();
     for ( var i = 0; i < resultArray.length; i++ ) {
         if ( resultArray[i] !== prev ) {
             a.push(resultArray[i]);
-            b.push(1);
-        } else {
-            b[b.length-1]++;
         }
         prev = resultArray[i];
     }
-
     return a;
 }
     var endings = compare(resultArray);
     debugger;
     $("#result-sidebar").text(endings.length);
-    alert(endings)
 
 
     $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry").hide();
