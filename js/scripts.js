@@ -139,6 +139,12 @@ $(document).ready(function() {
   $(".btn-reset").click(function(){
     $(".intro-page").show();
     $("#reset").hide();
+
+    for (i = 1; i<10; i++) {
+      if ($(".result" + i).css("display")=== "none") {
+        alert("hi");
+      }
+    }
     $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry").hide();
 
   });
