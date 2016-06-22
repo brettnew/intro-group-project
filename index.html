@@ -43,393 +43,307 @@
       <div class="background-image jumbotron" id="intro-img"></div>
     </div>
 <!-- Intro Page End -->
+    <div class="row">
+<!-- Sidebar Start -->
+      <div id="sidebar" class="col-xs-2">
+        <div><h3><span class="player-name"></span></h3></div>
+        <div><h3><span class="petsName"></span></h3></div>
+      </div>
+<!-- Sidebar End -->
+      <div class="col-xs-7 col-xs-offset-2">
 <!-- Decision 1 Start -->
-    <div id="decision1">
-      <img class="decision-images" src="img/decision1.png" alt="a rooftop scene with a boy on a ledge and a crowd watching"/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
+        <div id="decision1">
+          <img class="decision-images" src="img/decision1.png" alt="a rooftop scene with a boy on a ledge and a crowd watching"/>
+          <div class="decision-content">
+            <h1 class="page-header">The Journey Begins...</h1>
+            <p><br>Hi <span class="player-name"></span>!</p>
+            <p><br>Your grandparents owns a dry-cleaning business, and it's your job to make deliveries each day when you come home from school. Today you<span class="dogPet"> and <span class="petsName"></span>, your dog,</span> are taking a delivery to Shinwha High School, the most prestigious and expensive private school in all of South Korea. As you rush out the door, you quickly grab your
+              <select required id="special-item">
+                <option></option>
+                <option value="mini sewing kit">mini sewing kit</option>
+                <option value="locket">locket</option>
+                <option value="lucky rock">lucky rock</option>
+              </select>
+              , which you never leave home without.<span class="catPet"> On the way you found out your cat, <span class="petsName"></span>, hopped into your backpack!</span><span class="lizardPet"> On the way out the door your pet lizard, <span class="petsName"></span>, hops onto your shoulder to tag along.</span> As you get closer to the school, you notice a crowd forming on the main building's roof. You climb to the top of the roof, and see that there is a lone boy on the very edge.</p><br>
+              <div class="personality-shy">
+                <p>You start to whimper and are too afraid to move. He moves closer and closer to the edge, and despite your fear, you know you have to make a decision. You muster up the courage and a faint "h.. hey!" escapes your lips....</p></br>
+              </div>
+              <div class="personality-calm">
+                <p>You approach the boy, and attempt to reason with him. "Hey, it's not worth it, why don't you come down and we can talk about this?"</p></br>
+              </div>
+              <div class="personality-angry">
+                <p>You start shouting at the boy, "Hey, what do you think you're doing? You go to the best school around, what do you have to be unhappy about? Get down from there right now!"</p>
+              </div>
+            </br>
+            <p>You get closer, and just as you are near enough to reach out and touch him, he jumps!<br><br><strong>Do you:</strong></p>
+            <form id="decision-form">
+              <div class="radio">
+                <p>
+                  <input class="radio-btns" type="radio" name="option1" value="1" checked>
+                  Reach out to grab him, and pull him to safety
+                </p>
+              </div>
+              <div class="radio">
+                <p>
+                  <input class="radio-btns" type="radio" name="option1" value="2">
+                  Let him fall to his death
+                </p>
+              </div>
+              <button type="submit" class="btn btn-begin" id="button1">Next</button>
+            </form>
+          </div>
         </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">The Journey Begins...</h1>
-          <p><br>Hi <span class="player-name"></span>!</p>
-          <p><br>Your grandparents owns a dry-cleaning business, and it's your job to make deliveries each day when you come home from school. Today you<span class="dogPet"> and <span class="petsName"></span>, your dog,</span> are taking a delivery to Shinwha High School, the most prestigious and expensive private school in all of South Korea. As you rush out the door, you quickly grab your
-            <select required id="special-item">
-              <option></option>
-              <option value="mini sewing kit">mini sewing kit</option>
-              <option value="locket">locket</option>
-              <option value="lucky rock">lucky rock</option>
-            </select>
-            , which you never leave home without.<span class="catPet"> On the way you found out your cat, <span class="petsName"></span>, hopped into your backpack!</span><span class="lizardPet"> On the way out the door your pet lizard, <span class="petsName"></span>, hops onto your shoulder to tag along.</span> As you get closer to the school, you notice a crowd forming on the main building's roof. You climb to the top of the roof, and see that there is a lone boy on the very edge.</p><br>
+<!-- Decision 2a Start -->
+        <div id="decision-2a">
+          <img class="decision-images" src="img/news-story.png" alt="a news story in an internet browser showing a girl stopping a boy from jumping off roof"/>
+          <div class="decision-content">
+            <h1 class="page-header">Media Frenzy!</h1>
+            <p><br>Wow <span class="player-name"></span> you saved him! The crowd on the roof cheers at your heroics<span class="dogPet"> and <span class="petsName"></span> barks enthusiastically at your side</span><span class="catPet">, while <span class="petsName"></span> meows animatedly</span><span class="lizardPet"> and <span class="petsName"></span> bumps their head lightly against yours in congratulations</span>. You go home, but unbeknownst to you, a Shinwha student filmed the whole thing, and uploaded it to the Internet! By the next day, everyone has seen it, and are clamoring for you to be rewarded, and for Shinhwa High School to be investigated for allowing such an incident to take place on their campus. Desperate for good PR, Shinhwa High School offers you an all-expense paid scholarship.<br><br><strong>Do you:</strong></p>
+            <form id="decision2a-form">
+              <div class="radio">
+                <p>
+                  <input type="radio" name="option2a" value="1" checked>
+                  Take the scholarship
+                </p>
+              </div>
+              <div class="radio">
+                <p>
+                  <input type="radio" name="option2a" value="2">
+                  Refuse the scholarship
+                </p>
+              </div>
+              <button type="submit" class="btn btn-begin">Next</button>
+            </form>
+          </div>
+        </div>
+<!-- Decision 2b Start -->
+        <div id="decision-2b">
+          <img class="decision-images" src="img/min.jpg" alt="a bodyguard with a gun"/>
+          <div class="decision-content">
+            <h1 class="page-header">Men in Black</h1>
+            <p><br>Oh no <span class="player-name"></span>, you didn't save him! As you watch him plummet to his death, two men in black suits appear from the crowd and yell "Why didn't you save him?!", and pull out their guns on you. Turns out the student who had just jumped off had bodyguards!<span class="dogPet"> Your dog starts barking angrily at the men and moves in front to protect you.</span><span class="catPet"> Your cat hissed with their back arched and runs into a corner on the roof to hide.</span><span class="lizardPet"> Your lizard presses itself down on your shoulder and changes color to match your shirt.</p></span><br>
             <div class="personality-shy">
-              <p>You start to whimper and are too afraid to move. He moves closer and closer to the edge, and despite your fear, you know you have to make a decision. You muster up the courage and a faint "h.. hey!" escapes your lips....</p></br>
+              <p>You feel ashamed at your lack of action, and attempt to plead with the body guards. "Please, I didn't know he would jump, don't hurt me!"</p>
             </div>
             <div class="personality-calm">
-              <p>You approach the boy, and attempt to reason with him. "Hey, it's not worth it, why don't you come down and we can talk about this?"</p></br>
+              <p>You feel scared but still attempt to reason with the bodyguards. "How could I have known he would jump? Hurting me won't solve anything..."</p>
             </div>
             <div class="personality-angry">
-              <p>You start shouting at the boy, "Hey, what do you think you're doing? You go to the best school around, what do you have to be unhappy about? Get down from there right now!"</p>
+              <p>The sight of guns angers you. "Put those away! You were supposed to be guarding him you $%$@'s'"</p>
             </div>
-          </br>
-          <p>You get closer, and just as you are near enough to reach out and touch him, he jumps!<br><br><strong>Do you:</strong></p>
-          <form id="decision-form">
-            <div class="radio">
-              <p>
-                <input class="radio-btns" type="radio" name="option1" value="1" checked>
-                Reach out to grab him, and pull him to safety
-              </p>
-            </div>
-            <div class="radio">
-              <p>
-                <input class="radio-btns" type="radio" name="option1" value="2">
-                Let him fall to his death
-              </p>
-            </div>
-            <button type="submit" class="btn btn-begin" id="button1">Next</button>
-          </form>
-        </div>
-      </div>
-    </div>
-<!-- Decision 2a Start -->
-    <div id="decision-2a">
-      <img class="decision-images" src="img/news-story.png" alt="a news story in an internet browser showing a girl stopping a boy from jumping off roof"/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
-        </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">Media Frenzy!</h1>
-          <p><br>Wow <span class="player-name"></span> you saved him! The crowd on the roof cheers at your heroics<span class="dogPet"> and <span class="petsName"></span> barks enthusiastically at your side</span><span class="catPet">, while <span class="petsName"></span> meows animatedly</span><span class="lizardPet"> and <span class="petsName"></span> bumps their head lightly against yours in congratulations</span>. You go home, but unbeknownst to you, a Shinwha student filmed the whole thing, and uploaded it to the Internet! By the next day, everyone has seen it, and are clamoring for you to be rewarded, and for Shinhwa High School to be investigated for allowing such an incident to take place on their campus. Desperate for good PR, Shinhwa High School offers you an all-expense paid scholarship.<br><br><strong>Do you:</strong></p>
-          <form id="decision2a-form">
-            <div class="radio">
-              <p>
-                <input type="radio" name="option2a" value="1" checked>
-                Take the scholarship
-              </p>
-            </div>
-            <div class="radio">
-              <p>
-                <input type="radio" name="option2a" value="2">
-                Refuse the scholarship
-              </p>
-            </div>
-            <button type="submit" class="btn btn-begin">Next</button>
-          </form>
-        </div>
-      </div>
-    </div>
-<!-- Decision 2b Start -->
-    <div id="decision-2b">
-      <img class="decision-images" src="img/min.jpg" alt="a bodyguard with a gun"/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
-        </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">Men in Black</h1>
-          <p><br>Oh no <span class="player-name"></span>, you didn't save him! As you watch him plummet to his death, two men in black suits appear from the crowd and yell "Why didn't you save him?!", and pull out their guns on you. Turns out the student who had just jumped off had bodyguards!<span class="dogPet"> Your dog starts barking angrily at the men and moves in front to protect you.</span><span class="catPet"> Your cat hissed with their back arched and runs into a corner on the roof to hide.</span><span class="lizardPet"> Your lizard presses itself down on your shoulder and changes color to match your shirt.</p></span><br>
-          <div class="personality-shy">
-            <p>You feel ashamed at your lack of action, and attempt to plead with the body guards. "Please, I didn't know he would jump, don't hurt me!"</p>
+            <p><br><strong>Do you:</strong></p>
+            <form id="decision2b-form">
+              <div class="radio">
+                <p>
+                  <input type="radio" name="option2b" value="1" checked>
+                  Stay and try to fight off the bodyguards <span class="dogPet">with your dog</span>
+                </p>
+              </div>
+              <div class="radio">
+                <p>
+                  <input type="radio" name="option2b" value="2">
+                  <span class="dogPet">Grab your dog and</span> RUN
+                </p>
+              </div>
+              <button type="submit" class="btn btn-begin">Next</button>
+            </form>
           </div>
-          <div class="personality-calm">
-            <p>You feel scared but still attempt to reason with the bodyguards. "How could I have known he would jump? Hurting me won't solve anything..."</p>
-          </div>
-          <div class="personality-angry">
-            <p>The sight of guns angers you. "Put those away! You were supposed to be guarding him you $%$@'s'"</p>
-          </div>
-          <p><br><strong>Do you:</strong></p>
-          <form id="decision2b-form">
-            <div class="radio">
-              <p>
-                <input type="radio" name="option2b" value="1" checked>
-                Stay and try to fight off the bodyguards <span class="dogPet">with your dog</span>
-              </p>
+        </div>
+        <!-- 2b Segway -->
+        <div id="segway-2b">
+          <img class="decision-images" src="img/bodyguards-chase.jpg" alt="people chasing a guy on a roof"/>
+          <div class="decision-content">
+            <p>You reach the edge of the roof<span class="dogPet"> holding your dog</span>. Scared, you see your life flash before your eyes and you prepare to die. But before the bodyguards can shoot you, a mysterious woman emerges from the crowd and pushes you off the roof. <span class="catPet">The last thing you see is <span class="petsName"></span> looking worriedly at your from her corner.</span></p><br>
+            <div class="personality-shy">
+              <p>You wonder why these things always happen to you, "Why?!"</p>
             </div>
-            <div class="radio">
-              <p>
-                <input type="radio" name="option2b" value="2">
-                <span class="dogPet">Grab your dog and</span> RUN
-              </p>
+            <div class="personality-calm">
+              <p>You can't understand who the woman is or why she would push you off a roof. "Why have you done this?!"</p>
             </div>
-            <button type="submit" class="btn btn-begin">Next</button>
-          </form>
-        </div>
-      </div>
-    </div>
-<!-- 2b Segway -->
-    <div id="segway-2b">
-      <img class="decision-images" src="img/bodyguards-chase.jpg" alt="people chasing a guy on a roof"/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
-        </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <p>You reach the edge of the roof<span class="dogPet"> holding your dog</span>. Scared, you see your life flash before your eyes and you prepare to die. But before the bodyguards can shoot you, a mysterious woman emerges from the crowd and pushes you off the roof. <span class="catPet">The last thing you see is <span class="petsName"></span> looking worriedly at your from her corner.</span></p><br>
-          <div class="personality-shy">
-            <p>You wonder why these things always happen to you, "Why?!"</p>
+            <div class="personality-angry">
+              <p>Where did she come from? As you fall helplessly you yell at her, "How dare you! I'll get you for this!"</p>
+            </div>
+            <button type="submit" class="btn btn-begin" id="segway2b-btn">Continue</button>
           </div>
-          <div class="personality-calm">
-            <p>You can't understand who the woman is or why she would push you off a roof. "Why have you done this?!"</p>
-          </div>
-          <div class="personality-angry">
-            <p>Where did she come from? As you fall helplessly you yell at her, "How dare you! I'll get you for this!"</p>
-          </div>
-          <button type="submit" class="btn btn-begin" id="segway2b-btn">Continue</button>
         </div>
-      </div>
-    </div>
 <!--Decision 3a Start  -->
-    <div id="decision-3a">
-      <img class="decision-images" src="img/dead-meat.png" alt="a mean-looking popular guy"/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
+        <div id="decision-3a">
+          <img class="decision-images" src="img/dead-meat.png" alt="a mean-looking popular guy"/>
+          <div class="decision-content">
+            <h1 class="page-header">Trouble in the Hallway...</h1>
+            <p><br>Congratulations <span class="player-name"></span> you took the scholarship, you smarty pants! On your first day, you arrive early and excited to learn <span class="dogPet">while your ever faithful dog tags along</span>. A sudden commotion at the entryway to the school catches your attention, and you hurry over to see what is happening. Unfortunately, you trip, get an elbow to the stomach, and the gum that you were chewing is expelled, and lands... right in the hair of the most popular guy at school. He points at you, and says "You're dead meat."<br><br><strong>Do you:</strong></p>
+            <form id="decision3a-form">
+              <div class="radio personality-angry">
+                <p>
+                  <input type="radio" name="option3a" value="1" checked>
+                  Start cursing him for causing a commotion and therefore causing you to trip
+                </p>
+              </div>
+              <div class="radio personality-calm">
+                <p>
+                  <input type="radio" name="option3a" value="1" checked>
+                  Point out that it was an honest mistake, and violence won't solve anything
+                </p>
+              </div>
+              <div class="radio personality-shy">
+                <p>
+                  <input type="radio" name="option3a" value="1" checked>
+                  Break down crying and hope he feels sorry for you
+                </p>
+              </div>
+              <div class="radio">
+                <p>
+                  <input type="radio" name="option3a" value="2">
+                  Flee to China <span class="dogPet">with your dog</span>
+                </p>
+              </div>
+              <button type="submit" class="btn btn-begin">Next</button>
+            </form>
+          </div>
         </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">Trouble in the Hallway...</h1>
-          <p><br>Congratulations <span class="player-name"></span> you took the scholarship, you smarty pants! On your first day, you arrive early and excited to learn <span class="dogPet">while your ever faithful dog tags along</span>. A sudden commotion at the entryway to the school catches your attention, and you hurry over to see what is happening. Unfortunately, you trip, get an elbow to the stomach, and the gum that you were chewing is expelled, and lands... right in the hair of the most popular guy at school. He points at you, and says "You're dead meat."<br><br><strong>Do you:</strong></p>
-          <form id="decision3a-form">
-            <div class="radio personality-angry">
-              <p>
-                <input type="radio" name="option3a" value="1" checked>
-                Start cursing him for causing a commotion and therefore causing you to trip
-              </p>
-            </div>
-            <div class="radio personality-calm">
-              <p>
-                <input type="radio" name="option3a" value="1" checked>
-                Point out that it was an honest mistake, and violence won't solve anything
-              </p>
-            </div>
-            <div class="radio personality-shy">
-              <p>
-                <input type="radio" name="option3a" value="1" checked>
-                Break down crying and hope he feels sorry for you
-              </p>
-            </div>
-            <div class="radio">
-              <p>
-                <input type="radio" name="option3a" value="2">
-                Flee to China <span class="dogPet">with your dog</span>
-              </p>
-            </div>
-            <button type="submit" class="btn btn-begin">Next</button>
-          </form>
-        </div>
-      </div>
-    </div>
 <!--Decision 3b Start  -->
-    <div id="decision-3b">
-      <img class="decision-images" src="img/laundry.jpg" alt="A pile of royal Korean laundry."/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
-        </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">Time Warp</h1>
-          <p><br>As you fall <span class="dogPet">with your tiny dog in your arms</span>, a sudden wrinkle in time opens, and you are transported back to 17th century Korea. You open your eyes to find you <span class="dogPet">and your dog</span> have landed on a pile of laundry.<span class="lizardPet"> <span class="petsName"></span> crawls out from under a robe near your head. Their skin matches the color of the elaborate robe.</span> Somehow during the time travel your clothes have changed to be what 17th century Korean women wear. A man, mistaking you for a servant, demands that you clean the clothes you have landed on.</p><br>
-          <div class="personality-shy">
-            <p>The man's strange appearance frightens you, and you agree to do what he asks to avoid any trouble.</p>
-          </div>
-          <div class="personality-calm">
-            <p>The entire situation is confusing to you, and you are temporarily unable to act rationally, "Um, fine...I'll do it."</p>
-          </div>
-          <div class="personality-angry">
-            <p>The attitude of this strange man and the strangeness of the situation enrages you. "Why would I ever do anything for YOU!?" The man puts hs sword to your neck, and you decide to accept the situation...for now.</p>
-          </div>
-          </br><p>Turns out those are the king's royal garments. Using your dry-cleaning prowess, you clean them to perfection. Soon you become famous throughout the land for your skills. Then one night a strange lady arrives at your dwelling and demands you come with her. You recognize her as the woman on the roof who pushed you back in time.<br><br><strong>Do you:</strong></p>
-          <form id="decision3b-form">
-            <div class="radio">
-              <p>
-                <input type="radio" name="option3b" value="1" checked>
-                <span class="personality-angry">This woman needs to answer for what she's done, you follow her</span><span class="personality-calm">This woman might have the answers you want, you follow her</span>
-                <span class="personality-shy">This woman did push you, but because of her demanding nature you decide to follow her</span> with your dog in tow</span>, because you have questions about what happened
-              </p>
+        <div id="decision-3b">
+          <img class="decision-images" src="img/laundry.jpg" alt="A pile of royal Korean laundry."/>
+          <div class="decision-content">
+            <h1 class="page-header">Time Warp</h1>
+            <p><br>As you fall <span class="dogPet">with your tiny dog in your arms</span>, a sudden wrinkle in time opens, and you are transported back to 17th century Korea. You open your eyes to find you <span class="dogPet">and your dog</span> have landed on a pile of laundry.<span class="lizardPet"> <span class="petsName"></span> crawls out from under a robe near your head. Their skin matches the color of the elaborate robe.</span> Somehow during the time travel your clothes have changed to be what 17th century Korean women wear. A man, mistaking you for a servant, demands that you clean the clothes you have landed on.</p><br>
+            <div class="personality-shy">
+              <p>The man's strange appearance frightens you, and you agree to do what he asks to avoid any trouble.</p>
             </div>
-            <div class="radio">
-              <p>
-                <input type="radio" name="option3b" value="2">
-                You call the palace guards to arrest the woman because you can't forgive her for pushing you back in time
-              </p>
+            <div class="personality-calm">
+              <p>The entire situation is confusing to you, and you are temporarily unable to act rationally, "Um, fine...I'll do it."</p>
             </div>
-            <button type="submit" class="btn btn-begin">Next</button>
-          </form>
+            <div class="personality-angry">
+              <p>The attitude of this strange man and the strangeness of the situation enrages you. "Why would I ever do anything for YOU!?" The man puts hs sword to your neck, and you decide to accept the situation...for now.</p>
+            </div>
+            </br><p>Turns out those are the king's royal garments. Using your dry-cleaning prowess, you clean them to perfection. Soon you become famous throughout the land for your skills. Then one night a strange lady arrives at your dwelling and demands you come with her. You recognize her as the woman on the roof who pushed you back in time.<br><br><strong>Do you:</strong></p>
+            <form id="decision3b-form">
+              <div class="radio">
+                <p>
+                  <input type="radio" name="option3b" value="1" checked>
+                  <span class="personality-angry">This woman needs to answer for what she's done, you follow her</span><span class="personality-calm">This woman might have the answers you want, you follow her</span>
+                  <span class="personality-shy">This woman did push you, but because of her demanding nature you decide to follow her</span> with your dog in tow</span>, because you have questions about what happened
+                </p>
+              </div>
+              <div class="radio">
+                <p>
+                  <input type="radio" name="option3b" value="2">
+                  You call the palace guards to arrest the woman because you can't forgive her for pushing you back in time
+                </p>
+              </div>
+              <button type="submit" class="btn btn-begin">Next</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </div>
 <!--Decision 3c Start  -->
-    <div id="decision-3c">
-      <img class="decision-images" src="img/travelling-mom.jpg" alt="a mysterious lady dressed in Joseon-era clothing"/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
+        <div id="decision-3c">
+          <img class="decision-images" src="img/travelling-mom.jpg" alt="a mysterious lady dressed in Joseon-era clothing"/>
+          <div class="decision-content">
+            <h1 class="page-header">Mom???</h1>
+            <p><br>You decide to go with the lady and she reveals to be your time travelling mom. She tells you that she was stuck in the 21st century and could only go back home to the 17th century by pushing you into it as well. You have mixed feelings about the reunion<span class="lizardPet">, but your lizard takes to your mom in no time</span><span class="dogPet">, but your dog takes to your mom in no time</span>. <span class="personality-calm">You think about what she went through, and realize maybe she made the right choice.</span> Your mom tells you that she wants you to stay with her in this century. But you feel guilty about your decision to not save the boy on the roof, so your mom tells you that she can send you back to the 21st century, but you will never be able to come back to the 17th century.<br><br><strong>Do you:</strong></p>
+            <form id="decision3c-form">
+              <div class="radio">
+                <p>
+                  <input type="radio" name="option3c" value="1" checked>
+                  Stay with your mom in 17th century Korea
+                </p>
+              </div>
+              <div class="radio">
+                <p>
+                  <input type="radio" name="option3c" value="2">
+                  Go back to the time on the roof and save the boy from dying
+                </p>
+              </div>
+              <button type="submit" class="btn btn-begin">Next</button>
+            </form>
+          </div>
         </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">Mom???</h1>
-          <p><br>You decide to go with the lady and she reveals to be your time travelling mom. She tells you that she was stuck in the 21st century and could only go back home to the 17th century by pushing you into it as well. You have mixed feelings about the reunion<span class="lizardPet">, but your lizard takes to your mom in no time</span><span class="dogPet">, but your dog takes to your mom in no time</span>. <span class="personality-calm">You think about what she went through, and realize maybe she made the right choice.</span> Your mom tells you that she wants you to stay with her in this century. But you feel guilty about your decision to not save the boy on the roof, so your mom tells you that she can send you back to the 21st century, but you will never be able to come back to the 17th century.<br><br><strong>Do you:</strong></p>
-          <form id="decision3c-form">
-            <div class="radio">
-              <p>
-                <input type="radio" name="option3c" value="1" checked>
-                Stay with your mom in 17th century Korea
-              </p>
-            </div>
-            <div class="radio">
-              <p>
-                <input type="radio" name="option3c" value="2">
-                Go back to the time on the roof and save the boy from dying
-              </p>
-            </div>
-            <button type="submit" class="btn btn-begin">Next</button>
-          </form>
-        </div>
-      </div>
-    </div>
 <!-- Adventure Results Start -->
 <!-- Results 1 Start -->
-    <div id="result1">
-      <img class="decision-images" src="img/drama-ghost.jpg" alt="a scary ghost"/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
+        <div id="result1">
+          <img class="decision-images" src="img/drama-ghost.jpg" alt="a scary ghost"/>
+          <div class="decision-content">
+            <h1 class="page-header">Double Dead-End</h1>
+            <p><br>You refused the scholarship. You stay in public school, graduating in the middle of your class. You keep working at your parents' dry-cleaning business. A series of health issues with your grandma, your grandpa, and your brother force you to remortgage the business. They end up dying and you are left to run the business alone. Desperate, you turn to loan sharks, and they start hounding you to repay them. <span class="dogPet catPet">You have to sell your precious <span class="petsName"></span> in order to get some money to pay back your debts.</span> <span class="personality-calm">You attempt to reason with them to lower your interest rates, but they shoot you instead.</span><span class="personality-angry"> Eventually, the constant harassment forces you to confront them, however the deal you attempt with a local gang to buy a gun goes bad when you get angry over the price, and they are forced to shoot you and hide the body.</span><span class="personality-shy"> Scared, you increase your working hours to 20 hours a day. You die at 34, due to a stress-related illness.</span> Your <span class="personality-shy">timid </span>ghost haunts the earth for eternity<span class="personality-angry">, posessing people and making them slow down in the fast lane during rush hour</span><span class="personality-shy">, never getting up the courage to haunt anyone</span>.</p>
+            <h4><br>The End...or is it?</h4>
+          </div>
         </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">Double Dead-End</h1>
-          <p><br>You refused the scholarship. You stay in public school, graduating in the middle of your class. You keep working at your parents' dry-cleaning business. A series of health issues with your grandma, your grandpa, and your brother force you to remortgage the business. They end up dying and you are left to run the business alone. Desperate, you turn to loan sharks, and they start hounding you to repay them. <span class="dogPet catPet">You have to sell your precious <span class="petsName"></span> in order to get some money to pay back your debts.</span> <span class="personality-calm">You attempt to reason with them to lower your interest rates, but they shoot you instead.</span><span class="personality-angry"> Eventually, the constant harassment forces you to confront them, however the deal you attempt with a local gang to buy a gun goes bad when you get angry over the price, and they are forced to shoot you and hide the body.</span><span class="personality-shy"> Scared, you increase your working hours to 20 hours a day. You die at 34, due to a stress-related illness.</span> Your <span class="personality-shy">timid </span>ghost haunts the earth for eternity<span class="personality-angry">, posessing people and making them slow down in the fast lane during rush hour</span><span class="personality-shy">, never getting up the courage to haunt anyone</span>.</p>
-          <h4><br>The End...or is it?</h4>
-        </div>
-      </div>
-    </div>
 <!-- Results 2 Start -->
-    <div id="result2">
-      <img class="decision-images" src="img/shooter.jpg" alt="a woman holding a gun"/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
+        <div id="result2">
+          <img class="decision-images" src="img/shooter.jpg" alt="a woman holding a gun"/>
+          <div class="col-xs-7 col-xs-offset-2 decision-content">
+            <h1 class="page-header">Dead-End</h1>
+            <p><br>The bodyguards shoot you and you die.<span class="dogPet"> The bodyguards take pity on your dog and adopts them.</span><span class="catPet"> The bodyguards take pity on your cat and adopts them.</span><span class="lizardPet"> The bodyguards take pity on your lizard and adopts them.</span></p>
+            <h4><br>The End...or is it?</h4>
+          </div>
         </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">Dead-End</h1>
-          <p><br>The bodyguards shoot you and you die.<span class="dogPet"> The bodyguards take pity on your dog and adopts them.</span><span class="catPet"> The bodyguards take pity on your cat and adopts them.</span><span class="lizardPet"> The bodyguards take pity on your lizard and adopts them.</span></p>
-          <h4><br>The End...or is it?</h4>
-        </div>
-      </div>
-    </div>
 <!-- Results 3 Start -->
-    <div id="result3">
-      <img class="decision-images" src="img/kdrama-wedding.jpg" alt="a happy wedding"/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
+        <div id="result3">
+          <img class="decision-images" src="img/kdrama-wedding.jpg" alt="a happy wedding"/>
+          <div class="decision-content">
+            <h1 class="page-header">$$Happily Ever After$$</h1>
+            <p><br>After <span class="personality-angry">cursing him out</span><span class="personality-shy">crying in embarrassment</span><span class="personality-calm">reasoning with him</span>, he realizes that he has never met anyone like you. You fall in love, get married right after high school, and get all the benefits of being married to a rich man. You live happily ever after.</p>
+            <h4><br>The End...or is it?</h4>
+          </div>
         </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">$$Happily Ever After$$</h1>
-          <p><br>After <span class="personality-angry">cursing him out</span><span class="personality-shy">crying in embarrassment</span><span class="personality-calm">reasoning with him</span>, he realizes that he has never met anyone like you. You fall in love, get married right after high school, and get all the benefits of being married to a rich man. You live happily ever after.</p>
-          <h4><br>The End...or is it?</h4>
-        </div>
-      </div>
-    </div>
 <!-- Results 4 Start -->
-    <div id="result4">
-      <img class="decision-images" src="img/inn.jpg" alt="a mother and daughter"/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
+        <div id="result4">
+          <img class="decision-images" src="img/inn.jpg" alt="a mother and daughter"/>
+          <div class="decision">
+            <h1 class="page-header">Family Ties Inn the Joseon Period</h1>
+            <p><br>You decide to stay with your mother in 17th century Korea and live happily ever after running a small inn with her. Seventeenth century life is tough, but you're with your mother!</p>
+            <h4><br>The End...or is it?</h4>
+          </div>
         </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">Family Ties Inn the Joseon Period</h1>
-          <p><br>You decide to stay with your mother in 17th century Korea and live happily ever after running a small inn with her. Seventeenth century life is tough, but you're with your mother!</p>
-          <h4><br>The End...or is it?</h4>
-        </div>
-      </div>
-    </div>
 <!-- Results 5 Start -->
-    <div id="result5">
-      <img class="decision-images" src="img/yellow-sea.jpg" alt="a child swimming in algea"/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
+        <div id="result5">
+          <img class="decision-images" src="img/yellow-sea.jpg" alt="a child swimming in algea"/>
+          <div class="decision-content">
+            <h1 class="page-header">Shark Week</h1>
+            <p><br>You <span class="dogPet">and your dog </span>try to swim across the Yellow Sea, and you get eaten by a shark. You die<span class="dogPet">, but your dog swims to safety</span>.</p>
+            <h4><br>The End...or is it?</h4>
+          </div>
         </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">Shark Week</h1>
-          <p><br>You <span class="dogPet">and your dog </span>try to swim across the Yellow Sea, and you get eaten by a shark. You die<span class="dogPet">, but your dog swims to safety</span>.</p>
-          <h4><br>The End...or is it?</h4>
-        </div>
-      </div>
-    </div>
 <!-- Results 6 Start -->
-    <div id="result6">
-      <img class="decision-images" src="img/mom-dragged-away.jpg" alt="fuedal woman being apprehended and crying"/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
+        <div id="result6">
+          <img class="decision-images" src="img/mom-dragged-away.jpg" alt="fuedal woman being apprehended and crying"/>
+          <div class="decision-content">
+            <h1 class="page-header">My Monotonous Laundrette</h1>
+            <p><br>The palace guards charge in to your room, and you think you hear the mysterious woman screaming "<span class="player-name"></span>!" as she is dragged away, but it's too faint to tell. <em>There's no way she could have known your real name, right?</em><span class="dogPet"> you wonder out loud to your dog</span>? You live out the rest of your life cleaning the King's laundry, occasionally thinking about how you ended up in the same occupation even after being transported to another time.</p>
+            <h4><br>The End...or is it?</h4>
+          </div>
         </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">My Monotonous Laundrette</h1>
-          <p><br>The palace guards charge in to your room, and you think you hear the mysterious woman screaming "<span class="player-name"></span>!" as she is dragged away, but it's too faint to tell. <em>There's no way she could have known your real name, right?</em><span class="dogPet"> you wonder out loud to your dog</span>? You live out the rest of your life cleaning the King's laundry, occasionally thinking about how you ended up in the same occupation even after being transported to another time.</p>
-          <h4><br>The End...or is it?</h4>
-        </div>
-      </div>
-    </div>
 <!-- Results 7 Start -->
-    <div id="result7">
-      <img class="decision-images" src="img/result7.jpg" alt="Royal ceremony in 17th century Korea."/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
+        <div id="result7">
+          <img class="decision-images" src="img/result7.jpg" alt="Royal ceremony in 17th century Korea."/>
+          <div class="decision-content">
+            <h1 class="page-header">Lock(et) Down the Dynasty</h1>
+            <p><br>The palace guards rush to the scene. After the mysterious woman is taken away, the captain of the guards notices your locket, and realizes it is the royal symbol of the Queen! You consider the locket, and think about how you've had it all of your life. Upon being recognized as the true heir to the aging King, you live out the rest of your days in luxury<span class="dogPet lizardPet"> with <span class="petsName"></span> at your side</span>.</p>
+            <h4><br>The End...or is it?</h4>
+          </div>
         </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">Lock(et) Down the Dynasty</h1>
-          <p><br>The palace guards rush to the scene. After the mysterious woman is taken away, the captain of the guards notices your locket, and realizes it is the royal symbol of the Queen! You consider the locket, and think about how you've had it all of your life. Upon being recognized as the true heir to the aging King, you live out the rest of your days in luxury<span class="dogPet lizardPet"> with <span class="petsName"></span> at your side</span>.</p>
-          <h4><br>The End...or is it?</h4>
-        </div>
-      </div>
-    </div>
 <!-- Results 8 Start -->
-    <div id="result8">
-      <img class="decision-images" src="img/result8.jpg" alt="A foldable pocket sewing kit."/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
+        <div id="result8">
+          <img class="decision-images" src="img/result8.jpg" alt="A foldable pocket sewing kit."/>
+          <div class="decision-content">
+            <h1 class="page-header">Working Class Heroine</h1>
+            <p><br>After cursing him out, he realizes that he has never met anyone like you. But then your sewing kit is jostled out of your bag<span class="catPet"> by your cat, <span class="petsName"></span>, who had stowed away in your backback</span>. This shows that you are a working class girl, and the popular guy loses all interest and leaves. Better for you!</p>
+            <h4><br>The End...or is it?</h4>
+          </div>
         </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">Working Class Heroine</h1>
-          <p><br>After cursing him out, he realizes that he has never met anyone like you. But then your sewing kit is jostled out of your bag<span class="catPet"> by your cat, <span class="petsName"></span>, who had stowed away in your backback</span>. This shows that you are a working class girl, and the popular guy loses all interest and leaves. Better for you!</p>
-          <h4><br>The End...or is it?</h4>
-        </div>
-      </div>
-    </div>
 <!-- Results 9 Start -->
-    <div id="result9">
-      <img class="decision-images" src="img/result9.jpg" alt="Actor Randall Park waving."/>
-      <div class="row">
-        <div id="sidebar" class="col-xs-2">
-          <div><h3><span class="player-name"></span>Shradha</h3></div>
-          <div><h3><span class="petsName"></span>Cookie</h3></div>
+        <div id="result9">
+          <img class="decision-images" src="img/result9.jpg" alt="Actor Randall Park waving."/>
+          <div class="decision-content">
+            <h1 class="page-header">My Dad the Lizard</h1>
+            <p><br>The bodyguards shoot you but your lucky rock stops the bullet and shatters. There's a glowing light on your left shoulder and your pet lizard jumps to the ground. <span class="petsName"></span> begins to transform and turns into a middle-aged man. You recognize that man from the family portraits in your house... It's your missing dad! Turns out your dad is a descendent of royalty and well-known by the people at the school. He stops the bodyguards from shooting and you live happily ever after in a huge house with your family.</p>
+            <h4><br>The End...or is it?</h4>
+          </div>
         </div>
-        <div class="col-xs-7 col-xs-offset-2 decision-content">
-          <h1 class="page-header">My Dad the Lizard</h1>
-          <p><br>The bodyguards shoot you but your lucky rock stops the bullet and shatters. There's a glowing light on your left shoulder and your pet lizard jumps to the ground. <span class="petsName"></span> begins to transform and turns into a middle-aged man. You recognize that man from the family portraits in your house... It's your missing dad! Turns out your dad is a descendent of royalty and well-known by the people at the school. He stops the bodyguards from shooting and you live happily ever after in a huge house with your family.</p>
-          <h4><br>The End...or is it?</h4>
+        <div id="reset">
+          <button type="submit" class="btn btn-begin btn-reset">Try again?</button>
         </div>
       </div>
-    </div>
-    <div id="reset">
-      <button type="submit" class="btn btn-begin btn-reset">Try again?</button>
     </div>
 <!-- Adventure Results End -->
   </body>

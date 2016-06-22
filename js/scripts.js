@@ -21,6 +21,7 @@ $(document).ready(function() {
     var newCharacter = new Character(name, inputtedPetName);
     var personalityType = $("#player-personality").val();
     $(".intro-page").hide();
+    $("#sidebar").show();
     $(".player-name").text(newCharacter.nameCharacter);
     $(".petsName").text(newCharacter.petName);
     $("#decision1").show();
