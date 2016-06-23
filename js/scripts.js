@@ -99,6 +99,7 @@ $(document).ready(function() {
         $("#reset").show().delay(1000);
       }
     } else if (decision2b === "2") {
+      $("#decision-3b").hide();
       $("#segway-2b").fadeIn().delay(1000);
       $("#decision-2b").hide();
     }

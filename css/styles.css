@@ -118,3 +118,11 @@ p {
 .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry, #dogIcon, #catIcon, #lizardIcon, #sewingKit, #locket, #luckyRock, #happy, #sad, #chill {
   display: none;
 }
+
+#pname-h2 {
+  font-size: 35pt;
+}
+
+h2 {
+  text-align: center;
+}
