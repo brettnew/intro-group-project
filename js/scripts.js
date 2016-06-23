@@ -146,32 +146,24 @@ $(document).ready(function() {
     $(".intro-page").fadeToggle().delay(1000);
     $("#reset").hide();
     $("#result-total").fadeToggle().delay(1000);
-
-    for (i = 1; i<10; i++) {
-      if ($("#result" + i).css("display") != "none") {
-        resultArray.unshift(i);
-        $("#checklist" + resultArray[0]).show();
+    for (var possibleResults = 1; possibleResults <10; possibleResults ++) {
+      if ($("#result" + possibleResults).css("display") != "none") {
+        resultArray.unshift(possibleResults);
       }
     }
-    console.log(runningResults.length);
-
     function compare(resultArray) {
-
-     var a = [], prev;
-
-    resultArray.sort();
-    for ( var i = 0; i < resultArray.length; i++ ) {
-        if ( resultArray[i] !== prev ) {
-            a.push(resultArray[i]);
-        }
-        prev = resultArray[i];
+      var displayArray = [], prev;
+      resultArray.sort();
+      for (var i = 0; i < resultArray.length; i ++ ) {
+          if ( resultArray[i] !== prev ) {
+              displayArray.push(resultArray[i]);
+          }
+          prev = resultArray[i];
+      }
+      return displayArray;
     }
-    return a;
-}
     var endings = compare(resultArray);
     $("#result-sidebar").text(endings.length);
-
-
     $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry").hide();
     });
   });
