@@ -73,7 +73,7 @@ p {
   text-align: center;
 }
 
-#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, #result-total, #dad, #sidebar {
+#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, #result-total, #dad, #sidebar, #travel {
   display: none;
 }
 

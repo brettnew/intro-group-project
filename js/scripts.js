@@ -111,7 +111,7 @@ $(document).ready(function() {
     event.preventDefault();
     var decision2a = $("input:radio[name=option2a]:checked").val();
     if (decision2a === "1") {
-      $("#decision-3a").fadeIn().delay(1000);
+      $("#decision-3a").fadeIn();
       $("#decision-2a").hide();
       $("#happy").hide();
       $("#sad").show();
@@ -158,14 +158,14 @@ $(document).ready(function() {
       }
     } else if (decision2b === "2") {
       $("#decision-3b").hide();
-      $("#segway-2b").fadeIn().delay(1000);
+      $("#segway-2b").show();
       $("#decision-2b").hide();
     }
     window.scrollTo(0,0);
   });
 /////Segway Page
   $("#segway2b-btn").click(function() {
-    $("#decision-3b").fadeIn().delay(1000);
+    $("#decision-3b").show();
     $("#segway-2b").hide();
     $("#sad").hide();
     $("#chill").show();
@@ -177,8 +177,15 @@ $(document).ready(function() {
     var decision3a = $("input:radio[name=option3a]:checked").val();
     $("#happy").show();
     $("#sad").hide();
-    if (decision3a === "1") {
-      if (specialItem === "mini-sewing-kit") {
+    if (decision3a === "2") {
+      $("#result5").show(3000);
+      $("#reset").show().delay(1000);
+      $("#decision-3a").hide();
+      $("#happy").hide();
+      $("#sad").show();
+      exciting.pause();
+      dangerousLove.play();
+    } else if (decision3a === "1" && specialItem === "mini-sewing-kit") {
         $("#result8").show(3000);
         $("#reset").show().delay(1000);
         $("#decision-3a").hide();
@@ -186,9 +193,9 @@ $(document).ready(function() {
         dreamy.loop = true;
         dreamy.play();
       } else {
-        $("#result3").show(3000);
-        $("#reset").show().delay(1000);
         $("#decision-3a").hide();
+        $("#result3").show(3000);
+        $("#reset").show();
         exciting.pause();
         paradise.loop = true;
         paradise.play();
@@ -253,6 +260,7 @@ $(document).ready(function() {
       $("#decision-3c").hide();
     } else if (decision3c === "2") {
       $("#decision-2a").fadeIn().delay(1000);
+      $("#travel").show();
       $("#decision-3c").hide();
     }
     window.scrollTo(0,0);
@@ -284,7 +292,7 @@ $(document).ready(function() {
     }
     var endings = compare(resultArray);
     $("#result-sidebar").text(endings.length);
-    $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #sidebar, #dad, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry, #happy, #sad, #chill, #luckyRock, #locket, #sewingKit, #dogIcon, #lizardIcon, #catIcon").hide();
+    $("#decision1, #decision-2a, #decision-2b, #segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #sidebar, #dad, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry, #happy, #sad, #chill, #luckyRock, #locket, #sewingKit, #dogIcon, #lizardIcon, #travel, #catIcon").hide();
 /////Audio Files
     dangerousLove.loop = true;
     dangerousLove.play();
@@ -293,6 +301,7 @@ $(document).ready(function() {
     romanticDramatic.pause();
     romanticSweet.pause();
     paradise.pause();
+    window.scrollTo(0,0);
   });
   });
 });
