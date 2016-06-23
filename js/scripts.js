@@ -77,7 +77,10 @@ $(document).ready(function() {
     if (decision2b === "1") {
       if ((specialItem=== "lucky-rock") && (petType === "lizard")) {
         $("#reset").fadeToggle().delay(1000);
-        $("#result9").show(3000);
+        $("#result9").show(20);
+        $("#magicLizard").show();
+        $("#magicLizard").delay(2000).fadeOut(2000);
+        $("#dad").delay(4002).fadeIn(4000);
         $("#decision-2b").hide();
       } else {
         $("#result2").show(3000);
@@ -164,7 +167,7 @@ $(document).ready(function() {
     }
     var endings = compare(resultArray);
     $("#result-sidebar").text(endings.length);
-    $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry").hide();
-    });
+    $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, #sidebar, #result-total, #dad, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry").hide();
+  });
   });
 });
