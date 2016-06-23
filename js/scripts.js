@@ -1,28 +1,34 @@
 //Business Logic
 var resultArray = [];
-var runningResults = [];
 
 function Character(name, petName){
   this.nameCharacter = name;
   this.petName = petName;
+  this.resultArray = [];
 };
 
 
 //User Interface Logic
 $(document).ready(function() {
+  var name;
+  var petType;
+  var inputtedPetName;
+  var personalityType;
+  var specialItem;
   $("form#intro-form").submit(function(event){
     event.preventDefault();
-    var name = $("input#player1").val();
-    var petType = $("select#player-pet").val();
-    var inputtedPetName = $("input#pet-name").val();
+    name = $("input#player1").val();
+    petType = $("select#player-pet").val();
+    inputtedPetName = $("input#pet-name").val();
     var newCharacter = new Character(name, inputtedPetName);
-    var personalityType = $("#player-personality").val();
+    personalityType = $("#player-personality").val();
     $(".intro-page").hide();
     $("#sidebar").slideDown(2000);
     $(".player-name").text(newCharacter.nameCharacter);
     $(".petsName").text(newCharacter.petName);
     $("#decision1").slideDown(2000);
     $("#chill").show();
+    $("#special-item").val("");
     if(petType === "dog") {
       $(".dogPet").show();
       $("#dogIcon").show();
@@ -43,7 +49,7 @@ $(document).ready(function() {
   });
   $("form#decision-form").submit(function(event) {
     event.preventDefault();
-    var specialItem = $("select#special-item").val();
+    specialItem = $("select#special-item").val();
     var decision1 = $("input:radio[name=option1]:checked").val();
     if (decision1 === "1") {
       $("#decision-2a").fadeIn().delay(1000);
@@ -58,10 +64,16 @@ $(document).ready(function() {
     }
     if (specialItem === "lucky-rock") {
       $("#luckyRock").show();
+      $("#locket").hide();
+      $("#sewingKit").hide();
     } else if (specialItem === "locket") {
       $("#locket").show();
+      $("#luckyRock").hide();
+      $("#sewingKit").hide();
     } else if (specialItem === "mini-sewing-kit") {
       $("#sewingKit").show();
+      $("#luckyRock").hide();
+      $("#locket").hide();
     }
   $("form#decision2a-form").submit(function(event) {
     event.preventDefault();
@@ -81,7 +93,7 @@ $(document).ready(function() {
   });
   $("form#decision2b-form").submit(function(event) {
     event.preventDefault();
-    var petType = $("select#player-pet").val();
+    petType = $("select#player-pet").val();
     var decision2b = $("input:radio[name=option2b]:checked").val();
     if (decision2b === "1") {
       if ((specialItem === "lucky-rock") && (petType === "lizard")) {
@@ -170,6 +182,9 @@ $(document).ready(function() {
     }
   });
   $(".btn-reset").click(function() {
+    specialItem = "";
+    petType = "";
+    personalityType = "";
     $(".intro-page").show().delay(1000);
     $("#reset").hide();
     $("#result-total").show().delay(1000);
@@ -191,9 +206,7 @@ $(document).ready(function() {
     }
     var endings = compare(resultArray);
     $("#result-sidebar").text(endings.length);
-
-    $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #sidebar, #dad, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry, #happy, #sad, #chill").hide();
-
+    $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #sidebar, #dad, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry, #happy, #sad, #chill, #luckyRock, #locket, #sewingKit, #dogIcon, #lizardIcon, #catIcon").hide();
   });
   });
 });
