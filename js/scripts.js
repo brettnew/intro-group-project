@@ -2,11 +2,17 @@
 var resultArray = [];
 /////Audio Files
 var dangerousLove = new Audio("sound/dangerous_love.wav");
+dangerousLove.volume = 0.5;
 var dreamy = new Audio ("sound/dreamy.wav");
+dreamy.volume = 0.5;
 var exciting = new Audio ("sound/exciting.wav");
+exciting.volume = 0.5;
 var romanticDramatic = new Audio ("sound/romanticdramatic.wav");
+romanticDramatic.volume = 0.5
 var romanticSweet = new Audio ("sound/romanticsweet.wav");
+romanticSweet.volume = 0.5
 var paradise = new Audio ("sound/paradise.wav");
+paradise.volume = 0.5;
 /////Character Constructor
 function Character(name, petName) {
   this.nameCharacter = name;
