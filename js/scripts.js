@@ -22,6 +22,7 @@ $(document).ready(function() {
     $(".player-name").text(newCharacter.nameCharacter);
     $(".petsName").text(newCharacter.petName);
     $("#decision1").slideToggle(2000);
+    $("#chill").show();
     if(petType === "dog") {
       $(".dogPet").show();
       $("#dogIcon").show();
@@ -47,9 +48,13 @@ $(document).ready(function() {
     if (decision1 === "1") {
       $("#decision-2a").fadeToggle().delay(1000);
       $("#decision1").hide();
+      $("#chill").hide();
+      $("#happy").show();
     } else if (decision1 === "2") {
       $("#decision-2b").fadeToggle().delay(1000);
       $("#decision1").hide();
+      $("#chill").hide();
+      $("#sad").show();
     }
     if (specialItem === "lucky-rock") {
       $("#luckyRock").show();
@@ -64,8 +69,12 @@ $(document).ready(function() {
     if (decision2a === "1") {
       $("#decision-3a").fadeToggle().delay(1000);
       $("#decision-2a").hide();
+      $("#happy").hide();
+      $("#sad").show();
     } else if (decision2a === "2") {
       $("#result1").show(3000);
+      $("#happy").hide();
+      $("#sad").show();
       $("#reset").fadeToggle().delay(1000);
       $("#decision-2a").hide();
     }
@@ -99,6 +108,8 @@ $(document).ready(function() {
   $("form#decision3a-form").submit(function(event) {
     event.preventDefault();
     var decision3a = $("input:radio[name=option3a]:checked").val();
+    $("#happy").show();
+    $("#sad").hide();
     if (decision3a === "1") {
       if (specialItem === "mini-sewing-kit") {
         $("#result8").show(3000);
@@ -113,6 +124,8 @@ $(document).ready(function() {
       $("#result5").show(3000);
       $("#reset").fadeToggle().delay(1000);
       $("#decision-3a").hide();
+      $("#happy").hide();
+      $("#sad").show();
     }
   });
   $("form#decision3b-form").submit(function(event) {
@@ -167,7 +180,7 @@ $(document).ready(function() {
     }
     var endings = compare(resultArray);
     $("#result-sidebar").text(endings.length);
-    $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, #sidebar, #result-total, #dad, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry").hide();
+    $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, #sidebar, #result-total, #dad, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry, #happy, #sad, #chill").hide();
   });
   });
 });
