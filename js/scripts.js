@@ -1,11 +1,12 @@
 //Business Logic
 var resultArray = [];
 /////Audio Files
-var dangerousLove = new Audio('sound/dangerous_love.wav');
-var dreamy = new Audio ('sound/dreamy.wav');
-var exciting = new Audio ('sound/exciting.wav');
-var romanticDramatic = new Audio ('sound/romanticdramatic.wav');
-var romanticSweet = new Audio ('sound/romanticsweet.wav');
+var dangerousLove = new Audio("sound/dangerous_love.wav");
+var dreamy = new Audio ("sound/dreamy.wav");
+var exciting = new Audio ("sound/exciting.wav");
+var romanticDramatic = new Audio ("sound/romanticdramatic.wav");
+var romanticSweet = new Audio ("sound/romanticsweet.wav");
+var paradise = new Audio ("sound/paradise.wav");
 /////Character Constructor
 function Character(name, petName) {
   this.nameCharacter = name;
@@ -175,7 +176,7 @@ $(document).ready(function() {
         $("#reset").show().delay(1000);
         $("#decision-3a").hide();
         exciting.pause();
-        romanticSweet.play();
+        paradise.play();
       }
     } else if (decision3a === "2") {
       $("#result5").show(3000);
@@ -207,7 +208,7 @@ $(document).ready(function() {
         $("#reset").show().delay(1000);
         $("#decision-3b").hide();
         exciting.pause();
-        romanticDramatic.play();
+        paradise.play();
       } else {
         $("#chill").hide();
         $("#sad").show();
@@ -215,7 +216,7 @@ $(document).ready(function() {
         $("#reset").show().delay(1000);
         $("#decision-3b").hide();
         exciting.pause();
-        dreamy.pause();
+        dreamy.play();
       }
     }
     window.scrollTo(0,0);
@@ -270,6 +271,7 @@ $(document).ready(function() {
     exciting.pause();
     romanticDramatic.pause();
     romanticSweet.pause();
+    paradise.pause();
   });
   });
 });
