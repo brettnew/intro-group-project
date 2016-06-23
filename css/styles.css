@@ -64,8 +64,8 @@ p {
 }
 
 .icons {
-  width:100%;
-
+  width: 100%;
+  padding-top: 50px;
 }
 
 .decision-content {
