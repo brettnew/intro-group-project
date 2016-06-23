@@ -18,10 +18,10 @@ $(document).ready(function() {
     var newCharacter = new Character(name, inputtedPetName);
     var personalityType = $("#player-personality").val();
     $(".intro-page").hide();
-    $("#sidebar").slideToggle(2000);
+    $("#sidebar").slideDown(2000);
     $(".player-name").text(newCharacter.nameCharacter);
     $(".petsName").text(newCharacter.petName);
-    $("#decision1").slideToggle(2000);
+    $("#decision1").slideDown(2000);
     $("#chill").show();
     if(petType === "dog") {
       $(".dogPet").show();
@@ -84,8 +84,10 @@ $(document).ready(function() {
     var petType = $("select#player-pet").val();
     var decision2b = $("input:radio[name=option2b]:checked").val();
     if (decision2b === "1") {
-      if ((specialItem=== "lucky-rock") && (petType === "lizard")) {
+      if ((specialItem === "lucky-rock") && (petType === "lizard")) {
         $("#reset").show().delay(1000);
+        $("#sad").hide()
+        $("#happy").show();
         $("#result9").show(20);
         $("#magicLizard").show();
         $("#magicLizard").delay(2000).fadeOut(2000);
@@ -104,7 +106,9 @@ $(document).ready(function() {
   $("#segway2b-btn").click(function() {
     $("#decision-3b").fadeIn().delay(1000);
     $("#segway-2b").hide();
-  })
+    $("#sad").hide();
+    $("#chill").show();
+  });
   $("form#decision3a-form").submit(function(event) {
     event.preventDefault();
     var decision3a = $("input:radio[name=option3a]:checked").val();
@@ -134,12 +138,18 @@ $(document).ready(function() {
     if (decision3b === "1") {
       $("#decision-3c").fadeIn().delay(1000);
       $("#decision-3b").hide();
+      $("#chill").hide();
+      $("#happy").show();
     } else if (decision3b === "2") {
       if (specialItem === "locket") {
+        $("#chill").hide();
+        $("#happy").show();
         $("#result7").show(3000);
         $("#reset").show().delay(1000);
         $("#decision-3b").hide();
       } else {
+        $("#chill").hide();
+        $("#sad").show();
         $("#result6").show(3000);
         $("#reset").show().delay(1000);
         $("#decision-3b").hide();
@@ -158,7 +168,7 @@ $(document).ready(function() {
       $("#decision-3c").hide();
     }
   });
-  $(".btn-reset").click(function(){
+  $(".btn-reset").click(function() {
     $(".intro-page").show().delay(1000);
     $("#reset").hide();
     $("#result-total").show().delay(1000);
@@ -170,11 +180,11 @@ $(document).ready(function() {
     function compare(resultArray) {
       var displayArray = [], prev;
       resultArray.sort();
-      for (var i = 0; i < resultArray.length; i ++ ) {
-          if ( resultArray[i] !== prev ) {
-              displayArray.push(resultArray[i]);
+      for (var resultArrayElements = 0; resultArrayElements < resultArray.length; resultArrayElements ++ ) {
+          if ( resultArray[resultArrayElements] !== prev ) {
+              displayArray.push(resultArray[resultArrayElements]);
           }
-          prev = resultArray[i];
+          prev = resultArray[resultArrayElements];
       }
       return displayArray;
     }
