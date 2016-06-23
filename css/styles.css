@@ -1,6 +1,6 @@
 body {
   font-family: Georgia;
-  background-color: #191512;
+  background-color: #000000;
 }
 
 /*<-----------Intro Form Styling--------->*/
@@ -55,12 +55,17 @@ p {
 
 #sidebar {
   color: #FFFFFF;
-  background-color: #191512;
+  background-color: #000000;
   height: 100vh;
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 150px;
   position: fixed;
+}
+
+.icons {
+  width:100%;
+
 }
 
 .decision-content {
@@ -69,7 +74,8 @@ p {
   color: #FFFFFF;
 }
 
-#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset, #sidebar, #result-total {
+#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #reset
+, #sidebar, #result-total {
   display: none;
 }
 
@@ -110,6 +116,6 @@ p {
 
 /*<-----------Pets & Personalities Styling--------->*/
 
-.dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry {
+.dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry, #dogIcon, #catIcon, #lizardIcon, #sewingKit, #locket, #luckyRock {
   display: none;
 }
