@@ -76,7 +76,7 @@
             <h1 class="page-header">The Journey Begins...</h1>
             <p><br>Hi <span class="player-name"></span>!</p>
             <p><br>Your grandparents own a dry-cleaning business, and it's your job to make deliveries each day when you come home from school. Today you<span class="dogPet"> and <span class="petsName"></span>, your dog,</span> are taking a delivery to Shinwha High School, the most prestigious and expensive private school in all of South Korea. As you rush out the door, you quickly grab your
-              <select required id="special-item">
+              <select id="special-item">
                 <option></option>
                 <option value="mini-sewing-kit">mini sewing kit</option>
                 <option value="locket">locket</option>
@@ -191,28 +191,28 @@
             <h1 class="page-header">Trouble in the Hallway...</h1>
             <p><br>Congratulations <span class="player-name"></span> you took the scholarship, you smarty pants! On your first day, you arrive early and excited to learn<span class="dogPet"> while your ever faithful dog tags along</span>. A sudden commotion at the entryway to the school catches your attention, and you hurry over to see what is happening. Unfortunately, you trip, get an elbow to the stomach, and the gum that you were chewing is expelled, and lands... right in the hair of the most popular guy at school. He points at you, and says "You're dead meat."<br><br><strong>Do you:</strong></p>
             <form id="decision3a-form">
+              <div class="radio">
+                <p>
+                  <input type="radio" name="option3a" value="2" checked>
+                  Flee to China <span class="dogPet">with your dog</span>
+                </p>
+              </div>
               <div class="radio personality-angry">
                 <p>
-                  <input type="radio" name="option3a" value="1" checked>
+                  <input type="radio" name="option3a" value="1">
                   Start cursing him for causing a commotion and therefore causing you to trip
                 </p>
               </div>
               <div class="radio personality-calm">
                 <p>
-                  <input type="radio" name="option3a" value="1" checked>
+                  <input type="radio" name="option3a" value="1">
                   Point out that it was an honest mistake, and violence won't solve anything
                 </p>
               </div>
               <div class="radio personality-shy">
                 <p>
-                  <input type="radio" name="option3a" value="1" checked>
+                  <input type="radio" name="option3a" value="1">
                   Break down crying and hope he feels sorry for you
-                </p>
-              </div>
-              <div class="radio">
-                <p>
-                  <input type="radio" name="option3a" value="2">
-                  Flee to China <span class="dogPet">with your dog</span>
                 </p>
               </div>
               <button type="submit" class="btn btn-begin">Next</button>

@@ -46,6 +46,7 @@ $(document).ready(function() {
     } else if (personalityType === "angry") {
       $(".personality-angry").show();
     }
+    window.scrollTo(0,0);
   });
   $("form#decision-form").submit(function(event) {
     event.preventDefault();
@@ -75,6 +76,7 @@ $(document).ready(function() {
       $("#luckyRock").hide();
       $("#locket").hide();
     }
+    window.scrollTo(0,0);
   $("form#decision2a-form").submit(function(event) {
     event.preventDefault();
     var decision2a = $("input:radio[name=option2a]:checked").val();
@@ -90,6 +92,7 @@ $(document).ready(function() {
       $("#reset").show().delay(1000);
       $("#decision-2a").hide();
     }
+    window.scrollTo(0,0);
   });
   $("form#decision2b-form").submit(function(event) {
     event.preventDefault();
@@ -115,12 +118,14 @@ $(document).ready(function() {
       $("#segway-2b").fadeIn().delay(1000);
       $("#decision-2b").hide();
     }
+    window.scrollTo(0,0);
   });
   $("#segway2b-btn").click(function() {
     $("#decision-3b").fadeIn().delay(1000);
     $("#segway-2b").hide();
     $("#sad").hide();
     $("#chill").show();
+    window.scrollTo(0,0);
   });
   $("form#decision3a-form").submit(function(event) {
     event.preventDefault();
@@ -144,6 +149,7 @@ $(document).ready(function() {
       $("#happy").hide();
       $("#sad").show();
     }
+    window.scrollTo(0,0);
   });
   $("form#decision3b-form").submit(function(event) {
     event.preventDefault();
@@ -168,6 +174,7 @@ $(document).ready(function() {
         $("#decision-3b").hide();
       }
     }
+    window.scrollTo(0,0);
   });
   $("form#decision3c-form").submit(function(event) {
     event.preventDefault();
@@ -180,6 +187,7 @@ $(document).ready(function() {
       $("#decision-2a").fadeIn().delay(1000);
       $("#decision-3c").hide();
     }
+    window.scrollTo(0,0);
   });
   $(".btn-reset").click(function() {
     specialItem = "";
@@ -207,6 +215,7 @@ $(document).ready(function() {
     var endings = compare(resultArray);
     $("#result-sidebar").text(endings.length);
     $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #sidebar, #dad, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry, #happy, #sad, #chill, #luckyRock, #locket, #sewingKit, #dogIcon, #lizardIcon, #catIcon").hide();
+    window.scrollTo(0,0);
   });
   });
 });
