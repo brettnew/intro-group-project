@@ -1,5 +1,10 @@
 //Business Logic
 var resultArray = [];
+var dangerousLove = new Audio('sound/dangerous_love.wav');
+var dreamy = new Audio ('sound/dreamy.wav');
+var exciting = new Audio ('sound/exciting.wav');
+var romanticDramatic = new Audio ('sound/romanticdramatic.wav');
+var romanticSweet = new Audio ('sound/romanticsweet.wav');
 
 function Character(name, petName){
   this.nameCharacter = name;
@@ -15,6 +20,9 @@ $(document).ready(function() {
   var inputtedPetName;
   var personalityType;
   var specialItem;
+  $("input#player1").click(function(){
+    dangerousLove.play();
+  });
   $("form#intro-form").submit(function(event){
     event.preventDefault();
     name = $("input#player1").val();
@@ -48,7 +56,12 @@ $(document).ready(function() {
     }
     window.scrollTo(0,0);
   });
+  $("select#special-item").click(function(){
+    dangerousLove.pause();
+    exciting.play();
+  })
   $("form#decision-form").submit(function(event) {
+
     event.preventDefault();
     specialItem = $("select#special-item").val();
     var decision1 = $("input:radio[name=option1]:checked").val();
@@ -57,6 +70,8 @@ $(document).ready(function() {
       $("#decision1").hide();
       $("#chill").hide();
       $("#happy").show();
+      exciting.pause();
+      romanticSweet.play();
     } else if (decision1 === "2") {
       $("#decision-2b").fadeIn().delay(1000);
       $("#decision1").hide();
@@ -77,6 +92,7 @@ $(document).ready(function() {
       $("#locket").hide();
     }
     window.scrollTo(0,0);
+        //media frenzy
   $("form#decision2a-form").submit(function(event) {
     event.preventDefault();
     var decision2a = $("input:radio[name=option2a]:checked").val();
@@ -85,12 +101,16 @@ $(document).ready(function() {
       $("#decision-2a").hide();
       $("#happy").hide();
       $("#sad").show();
+      romanticSweet.pause();
+      exciting.play();
     } else if (decision2a === "2") {
       $("#result1").show(3000);
       $("#happy").hide();
       $("#sad").show();
       $("#reset").show().delay(1000);
       $("#decision-2a").hide();
+      romanticSweet.pause();
+      dreamy.play();
     }
     window.scrollTo(0,0);
   });
@@ -108,15 +128,20 @@ $(document).ready(function() {
         $("#magicLizard").delay(2000).fadeOut(2000);
         $("#dad").delay(4002).fadeIn(4000);
         $("#decision-2b").hide();
+        exciting.pause();
+        romanticSweet.play()
       } else {
         $("#result2").show(3000);
         $("#decision-2b").hide();
         $("#reset").show().delay(1000);
+        exciting.pause();
+        dreamy.play();
       }
     } else if (decision2b === "2") {
       $("#decision-3b").hide();
       $("#segway-2b").fadeIn().delay(1000);
       $("#decision-2b").hide();
+
     }
     window.scrollTo(0,0);
   });
@@ -137,10 +162,14 @@ $(document).ready(function() {
         $("#result8").show(3000);
         $("#reset").show().delay(1000);
         $("#decision-3a").hide();
+        exciting.pause();
+        dreamy.play();
       } else {
         $("#result3").show(3000);
         $("#reset").show().delay(1000);
         $("#decision-3a").hide();
+        exciting.pause();
+        romanticSweet.play();
       }
     } else if (decision3a === "2") {
       $("#result5").show(3000);
@@ -148,6 +177,8 @@ $(document).ready(function() {
       $("#decision-3a").hide();
       $("#happy").hide();
       $("#sad").show();
+      exciting.pause();
+      dangerousLove.play();
     }
     window.scrollTo(0,0);
   });
@@ -159,6 +190,8 @@ $(document).ready(function() {
       $("#decision-3b").hide();
       $("#chill").hide();
       $("#happy").show();
+      exciting.pause();
+      romanticSweet.play();
     } else if (decision3b === "2") {
       if (specialItem === "locket") {
         $("#chill").hide();
@@ -166,12 +199,17 @@ $(document).ready(function() {
         $("#result7").show(3000);
         $("#reset").show().delay(1000);
         $("#decision-3b").hide();
+        exciting.pause();
+        romanticDramatic.play();
       } else {
         $("#chill").hide();
         $("#sad").show();
         $("#result6").show(3000);
         $("#reset").show().delay(1000);
         $("#decision-3b").hide();
+        exciting.pause();
+        dreamy.pause();
+
       }
     }
     window.scrollTo(0,0);
@@ -180,12 +218,15 @@ $(document).ready(function() {
     event.preventDefault();
     var decision3c = $("input:radio[name=option3c]:checked").val();
     if (decision3c === "1") {
+      romanticSweet.pause();
+      dangerousLove.play();
       $("#result4").show(3000);
       $("#reset").show().delay(1000);
       $("#decision-3c").hide();
     } else if (decision3c === "2") {
       $("#decision-2a").fadeIn().delay(1000);
       $("#decision-3c").hide();
+
     }
     window.scrollTo(0,0);
   });
@@ -215,7 +256,12 @@ $(document).ready(function() {
     var endings = compare(resultArray);
     $("#result-sidebar").text(endings.length);
     $("#decision1, #decision-2a, #decision-2b,#segway-2b, #result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #decision-3a, #decision-3b, #decision-3c, #sidebar, #dad, .dogPet, .catPet, .lizardPet, .personality-shy, .personality-calm, .personality-angry, #happy, #sad, #chill, #luckyRock, #locket, #sewingKit, #dogIcon, #lizardIcon, #catIcon").hide();
-    window.scrollTo(0,0);
+    dangerousLove.play();
+    dreamy.pause();
+    exciting.pause();
+    romanticDramatic.pause();
+    romanticSweet.pause();
+
   });
   });
 });
