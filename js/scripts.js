@@ -69,8 +69,8 @@ $(document).ready(function() {
   });
   $("select#special-item").click(function() {
     dangerousLove.pause();
-    exciting.loop = true;
-    exciting.play();
+    romanticDramatic.loop = true;
+    romanticDramatic.play();
   });
 /////Decision 1 Page
   $("form#decision-form").submit(function(event) {
@@ -82,14 +82,18 @@ $(document).ready(function() {
       $("#decision1").hide();
       $("#chill").hide();
       $("#happy").show();
-      exciting.pause();
-      romanticSweet.loop = true;
+      dangerousLove.pause();
+      romanticDramatic.pause();
+      romanticDramatic.loop = true;
       romanticSweet.play();
     } else if (decision1 === "2") {
       $("#decision-2b").fadeIn().delay(1000);
       $("#decision1").hide();
       $("#chill").hide();
       $("#sad").show();
+      dangerousLove.pause();
+      romanticDramatic.pause();
+      exciting.play();
     }
 /////Special Items Statements
     if (specialItem === "lucky-rock") {
@@ -184,6 +188,7 @@ $(document).ready(function() {
       $("#happy").hide();
       $("#sad").show();
       exciting.pause();
+      dangerousLove.loop = true;
       dangerousLove.play();
     } else if (decision3a === "1" && specialItem === "mini-sewing-kit") {
         $("#result8").show(3000);
@@ -198,18 +203,9 @@ $(document).ready(function() {
         $("#reset").show();
         exciting.pause();
         paradise.loop = true;
+        paradise.currentTime = 0;
         paradise.play();
       }
-    } else if (decision3a === "2") {
-      $("#result5").show(3000);
-      $("#reset").show().delay(1000);
-      $("#decision-3a").hide();
-      $("#happy").hide();
-      $("#sad").show();
-      exciting.pause();
-      dangerousLove.loop = true;
-      dangerousLove.play();
-    }
     window.scrollTo(0,0);
   });
 /////Decision 3b Page
@@ -233,6 +229,7 @@ $(document).ready(function() {
         $("#decision-3b").hide();
         exciting.pause();
         paradise.loop = true;
+        paradise.currentTime = 0;
         paradise.play();
       } else {
         $("#chill").hide();
@@ -252,9 +249,6 @@ $(document).ready(function() {
     event.preventDefault();
     var decision3c = $("input:radio[name=option3c]:checked").val();
     if (decision3c === "1") {
-      romanticSweet.pause();
-      dangerousLove.loop = true;
-      dangerousLove.play();
       $("#result4").show(3000);
       $("#reset").show().delay(1000);
       $("#decision-3c").hide();
@@ -262,6 +256,9 @@ $(document).ready(function() {
       $("#decision-2a").fadeIn().delay(1000);
       $("#travel").show();
       $("#decision-3c").hide();
+      romanticSweet.pause();
+      dangerousLove.loop = true;
+      dangerousLove.play();
     }
     window.scrollTo(0,0);
   });
@@ -300,7 +297,7 @@ $(document).ready(function() {
     exciting.pause();
     romanticDramatic.pause();
     romanticSweet.pause();
-    paradise.pause();
+    paradise.stop();
     window.scrollTo(0,0);
   });
   });
